@@ -1,563 +1,648 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Israel Paketh — Black Work & Ornamental Tattoo Artist</title>
-    <meta name="description" content="Israel Paketh — International black work & ornamental tattoo artist based in Ko Samui, Thailand. From Buenos Aires to Bangkok to Ko Samui. Booking 2026.">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="custom.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Israel Paketh — Geometric · Blackwork · Ornamental Tattoo Artist</title>
+<meta name="description" content="Israel Paketh is an internationally renowned geometric, blackwork, and ornamental tattoo artist based in Argentina and Thailand. 101K+ followers. Book your session now.">
+<meta name="keywords" content="Israel Paketh, geometric tattoo, blackwork tattoo, ornamental tattoo, tattoo artist Argentina, tattoo artist Thailand, sacred geometry tattoo, mindtrip studio">
+<meta name="author" content="Israel Paketh">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://tattoosbypaketh.com">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Israel Paketh — Black Work & Ornamental Tattoo Artist">
-    <meta property="og:description" content="International tattoo artist. Ko Samui, Thailand. Booking 2026.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=1200">
+<!-- Open Graph -->
+<meta property="og:title" content="Israel Paketh — Geometric · Blackwork · Ornamental">
+<meta property="og:description" content="Internationally renowned tattoo artist specializing in geometric, blackwork & ornamental work. Based in Argentina 🇦🇷 & Thailand 🇹🇭. Now booking 2026.">
+<meta property="og:image" content="https://tattoosbypaketh.com/img/tattoo-01.jpg">
+<meta property="og:url" content="https://tattoosbypaketh.com">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Israel Paketh — Geometric · Blackwork · Ornamental">
+<meta name="twitter:description" content="International tattoo artist. Geometric · Blackwork · Ornamental. Booking 2026.">
+<meta name="twitter:image" content="https://tattoosbypaketh.com/img/tattoo-01.jpg">
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TattooParlor",
+  "name": "Israel Paketh Tattoo",
+  "alternateName": "tattoosbypaketh",
+  "description": "Internationally renowned geometric, blackwork, and ornamental tattoo artist",
+  "url": "https://tattoosbypaketh.com",
+  "email": "Tattoosbypaketh@gmail.com",
+  "image": "https://tattoosbypaketh.com/img/tattoo-01.jpg",
+  "sameAs": [
+    "https://www.instagram.com/tattoosbypaketh/",
+    "https://www.instagram.com/mindtripstudio/",
+    "https://allmylinks.com/mindtripstudio"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Israel Paketh",
+    "jobTitle": "Tattoo Artist",
+    "knowsAbout": ["Geometric Tattoo", "Blackwork Tattoo", "Ornamental Tattoo", "Sacred Geometry"]
+  },
+  "areaServed": ["Argentina", "Thailand", "International"],
+  "priceRange": "$$$$"
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #0a0a0a;
+  --bg-card: #111111;
+  --gold: #C9A84C;
+  --gold-dim: #A8893D;
+  --gold-glow: rgba(201, 168, 76, 0.15);
+  --text: #e8e8e8;
+  --text-dim: #888888;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Inter', -apple-system, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 3px; }
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse at center, var(--gold-glow) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-line {
+  width: 1px;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, var(--gold));
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.hero-tags {
+  font-family: var(--sans);
+  font-size: clamp(0.75rem, 2vw, 0.95rem);
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.hero-location {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.hero-location span { color: var(--gold-dim); }
+
+.hero-scroll {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.hero-scroll svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--gold-dim);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; transform: translateY(0); }
+  50% { opacity: 1; transform: translateY(4px); }
+}
+
+/* ── SECTIONS ── */
+section { padding: 5rem 1.5rem; max-width: 1200px; margin: 0 auto; }
+
+.section-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+}
+
+.divider {
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto 3rem;
+}
+
+/* ── GALLERY ── */
+.gallery {
+  columns: 2;
+  column-gap: 12px;
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 12px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s;
+  filter: brightness(0.9);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
+  filter: brightness(1);
+}
+
+.gallery-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.gallery-item:hover::after {
+  border-color: var(--gold-dim);
+}
+
+@media (min-width: 768px) {
+  .gallery { columns: 3; column-gap: 16px; }
+  .gallery-item { margin-bottom: 16px; }
+}
+
+/* ── ABOUT ── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 800px;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-dim);
+}
+
+.about-text strong { color: var(--text); font-weight: 400; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #1a1a1a;
+}
+
+.stat-number {
+  font-family: var(--serif);
+  font-size: 2rem;
+  color: var(--gold);
+  font-weight: 300;
+}
+
+.stat-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-top: 0.25rem;
+}
+
+/* ── BOOKING ── */
+.booking-section {
+  text-align: center;
+  padding: 6rem 1.5rem;
+}
+
+.booking-section .section-title { margin-bottom: 1rem; }
+
+.booking-text {
+  color: var(--text-dim);
+  max-width: 500px;
+  margin: 0 auto 2.5rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.btn-book {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-book::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%; width: 100%; height: 100%;
+  background: var(--gold);
+  transition: left 0.4s;
+  z-index: -1;
+}
+
+.btn-book:hover::before { left: 0; }
+.btn-book:hover { color: var(--bg); }
+
+.contact-email {
+  display: block;
+  margin-top: 2rem;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+}
+
+.contact-email a {
+  color: var(--gold-dim);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-email a:hover { color: var(--gold); }
+
+/* ── FLOATING BOOK NOW ── */
+.fab-book {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 900;
+  background: var(--gold);
+  color: var(--bg);
+  padding: 0.9rem 1.8rem;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  box-shadow: 0 4px 20px rgba(201, 168, 76, 0.3);
+  transition: all 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fab-book.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fab-book:hover {
+  box-shadow: 0 6px 30px rgba(201, 168, 76, 0.5);
+  transform: translateY(-2px);
+}
+
+/* ── FOOTER ── */
+footer {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  border-top: 1px solid #151515;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-social a {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover { color: var(--gold); }
+
+.footer-credit {
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  opacity: 0.5;
+  letter-spacing: 0.1em;
+}
+
+.footer-credit a { color: var(--text-dim); text-decoration: none; }
+.footer-credit a:hover { color: var(--gold); opacity: 1; }
+
+/* ── LIGHTBOX ── */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  cursor: zoom-out;
+}
+
+.lightbox.active { opacity: 1; pointer-events: all; }
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
+  transform: scale(0.9);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.lightbox.active img { transform: scale(1); }
+
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dim);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.lightbox-close:hover { color: var(--gold); }
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-dim);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+  transition: color 0.3s;
+  user-select: none;
+}
+
+.lightbox-nav:hover { color: var(--gold); }
+.lightbox-prev { left: 1rem; }
+.lightbox-next { right: 1rem; }
+
+/* ── REVEAL ANIMATION ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered children */
+.gallery-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+.gallery-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
 </head>
 <body>
 
-    <!-- Booking 2026 Banner -->
-    <div class="books-banner books-closed">
-        <div class="container">
-            <div class="books-status">
-                <span class="books-icon">🗓</span>
-                <span class="books-text">Currently <strong>Booking 2026</strong> — International inquiries welcome</span>
-                <span class="books-action">Inquire Below ↓</span>
-            </div>
-        </div>
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-line"></div>
+  <h1>Israel Paketh</h1>
+  <p class="hero-tags">Geometric · Blackwork · Ornamental</p>
+  <p class="hero-location">Argentina <span>🇦🇷</span> · Thailand <span>🇹🇭</span> · International</p>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </div>
+</header>
+
+<!-- GALLERY -->
+<section id="work">
+  <p class="section-label reveal">Portfolio</p>
+  <h2 class="section-title reveal">Selected Work</h2>
+  <div class="divider reveal"></div>
+  <div class="gallery">
+    <div class="gallery-item" data-index="0"><img src="img/tattoo-01.jpg" alt="Geometric blackwork tattoo by Israel Paketh" loading="lazy"></div>
+    <div class="gallery-item" data-index="1"><img src="img/tattoo-02.jpg" alt="Ornamental tattoo design by Israel Paketh" loading="lazy"></div>
+    <div class="gallery-item" data-index="2"><img src="img/tattoo-03.jpg" alt="Blackwork back piece by Israel Paketh" loading="lazy"></div>
+    <div class="gallery-item" data-index="3"><img src="img/tattoo-04.jpg" alt="Sacred geometry tattoo by Israel Paketh" loading="lazy"></div>
+    <div class="gallery-item" data-index="4"><img src="img/tattoo-05.jpg" alt="Ornamental body tattoo by Israel Paketh" loading="lazy"></div>
+    <div class="gallery-item" data-index="5"><img src="img/tattoo-06.jpg" alt="Geometric sleeve tattoo by Israel Paketh" loading="lazy"></div>
+    <div class="gallery-item" data-index="6"><img src="img/tattoo-07.jpg" alt="Blackwork ornamental tattoo by Israel Paketh" loading="lazy"></div>
+    <div class="gallery-item" data-index="7"><img src="img/tattoo-08.jpg" alt="Geometric chest piece by Israel Paketh" loading="lazy"></div>
+    <div class="gallery-item" data-index="8"><img src="img/tattoo-09.jpg" alt="Ornamental blackwork by Israel Paketh" loading="lazy"></div>
+    <div class="gallery-item" data-index="9"><img src="img/tattoo-10.jpg" alt="Sacred geometry blackwork by Israel Paketh" loading="lazy"></div>
+    <div class="gallery-item" data-index="10"><img src="img/tattoo-11.jpg" alt="Geometric ornamental tattoo by Israel Paketh" loading="lazy"></div>
+    <div class="gallery-item" data-index="11"><img src="img/tattoo-12.jpg" alt="Blackwork geometric piece by Israel Paketh" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="section-label reveal">About</p>
+  <h2 class="section-title reveal">The Artist</h2>
+  <div class="divider reveal"></div>
+  <div class="about-grid reveal">
+    <div class="about-text">
+      <p>Israel Paketh is an internationally recognized tattoo artist specializing in <strong>geometric, blackwork, and ornamental</strong> tattooing. Working between <strong>Argentina</strong> and <strong>Koh Samui, Thailand</strong>, he creates bold, intricate designs rooted in sacred geometry, architectural patterns, and ornamental precision.</p>
+      <br>
+      <p>Known for large-scale body projects — full backs, sleeves, and bodysuits — his work balances mathematical precision with organic flow. Each piece is custom-designed, built to complement the body's natural lines and movement.</p>
+      <br>
+      <p>Israel works from <strong>@mindtripstudio</strong> in Koh Samui and travels internationally for conventions and guest spots. His signature style has earned a following of over <strong>101,000</strong> collectors and artists worldwide.</p>
     </div>
-
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">ISRAEL PAKETH</span>
-                <span class="logo-flags">🇦🇷🇹🇭</span>
-            </div>
-            <div class="nav-menu" id="navMenu">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#gallery" class="nav-link">Work</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#studio" class="nav-link">Studio</a>
-                <a href="#contact" class="nav-link">Contact</a>
-                <a href="mailto:tattoosbypaketh@gmail.com" class="nav-link cta-nav">Inquire 2026</a>
-            </div>
-            <div class="nav-toggle" id="navToggle">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-bg">
-            <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=1800&q=80" alt="Ornamental tattoo background" loading="eager">
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <p class="hero-eyebrow">🇦🇷 Buenos Aires &nbsp;→&nbsp; Bangkok &nbsp;→&nbsp; Ko Samui 🇹🇭</p>
-                    <h1 class="hero-title">Israel Paketh</h1>
-                    <p class="hero-subtitle">Black Work &amp; Ornamental Tattoo Artist</p>
-                    <p class="hero-location">📍 Mindtrip Studio · Ko Samui, Thailand</p>
-
-                    <div class="booking-badge">
-                        <span class="booking-dot"></span>
-                        Booking 2026
-                    </div>
-
-                    <div class="hero-buttons">
-                        <a href="mailto:tattoosbypaketh@gmail.com" class="btn btn-primary">Inquire for 2026</a>
-                        <a href="#gallery" class="btn btn-secondary">View My Work</a>
-                    </div>
-
-                    <div class="hero-proof">
-                        <div class="proof-item">
-                            <span class="proof-number">102K</span>
-                            <span class="proof-text">followers</span>
-                        </div>
-                        <div class="proof-item">
-                            <span class="proof-number">10+</span>
-                            <span class="proof-text">years tattooing</span>
-                        </div>
-                        <div class="proof-item">
-                            <span class="proof-number">3</span>
-                            <span class="proof-text">continents</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="hero-image">
-                        <img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=800&q=85" alt="Israel Paketh — ornamental black work" loading="eager">
-                        <div class="hero-image-accent"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="section-header">
-                        <p class="section-eyebrow">The Artist</p>
-                        <h2>About Israel</h2>
-                    </div>
-                    <div class="about-bio">
-                        <p>Born and raised in Buenos Aires, Argentina, Israel Paketh developed an obsession with geometric precision and ornamental beauty from an early age. What began as a fascination with sacred geometry evolved into a lifelong dedication to the craft of tattooing.</p>
-                        <p>His journey took him first to Bangkok — one of Asia's most vibrant tattoo capitals — where he honed his technique and developed the signature dark, intricate style that would earn him a global following. Today, Israel is based at <strong>Mindtrip Studio</strong> in Ko Samui, Thailand, where he creates deeply personal, architectural tattoos for clients who travel from around the world.</p>
-                        <p>With over 102,000 followers and sponsorships from industry leaders <strong>@eztattooing</strong>, <strong>@inklabtattoomachine</strong>, and <strong>@kurikara_markers</strong>, Israel is recognized as one of the leading voices in contemporary black work and ornamental tattooing.</p>
-                        <p>Beyond tattooing, Israel channels his love of sacred geometry and symbolism into <strong>Inner Pyramids</strong> — a handcrafted jewelry line that extends his artistic vision into wearable form.</p>
-                    </div>
-                    <div class="about-specialties">
-                        <h3>Specialties</h3>
-                        <ul class="specialty-list">
-                            <li>Black work &amp; black-and-grey</li>
-                            <li>Ornamental &amp; decorative tattoos</li>
-                            <li>Sacred geometry &amp; mandala</li>
-                            <li>Fine line &amp; dotwork</li>
-                            <li>Large-scale compositions</li>
-                            <li>Custom design collaborations</li>
-                        </ul>
-                    </div>
-                    <div class="about-flags">
-                        <span class="flag-badge">🇦🇷 Argentina</span>
-                        <span class="flag-badge">🇹🇭 Thailand</span>
-                        <span class="flag-badge">✈️ Travels Globally</span>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1598971639058-fab3c3109a73?w=700&q=80" alt="Israel Paketh tattooing" loading="lazy">
-                    <div class="about-image-label">Mindtrip Studio · Ko Samui</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
-        <div class="container">
-            <div class="section-header">
-                <p class="section-eyebrow">Portfolio</p>
-                <h2>Recent Work</h2>
-                <p>Black work, ornamental &amp; sacred geometry</p>
-            </div>
-
-            <div class="gallery-filters">
-                <button class="filter-btn active" data-filter="all">All Work</button>
-                <button class="filter-btn" data-filter="ornamental">Ornamental</button>
-                <button class="filter-btn" data-filter="geometry">Sacred Geometry</button>
-                <button class="filter-btn" data-filter="blackwork">Black Work</button>
-                <button class="filter-btn" data-filter="fineline">Fine Line</button>
-            </div>
-
-            <div class="gallery-grid" id="galleryGrid">
-
-                <div class="gallery-item" data-category="ornamental" data-title="Ornamental Chest Piece" data-desc="Intricate ornamental design with gold inlay work">
-                    <img src="https://images.unsplash.com/photo-1590246814883-57c511e4f2af?w=600&q=80" alt="Ornamental tattoo" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span class="gallery-label">Ornamental</span>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="geometry" data-title="Sacred Geometry Sleeve" data-desc="Full sleeve featuring interlocking sacred geometry">
-                    <img src="https://images.unsplash.com/photo-1542202229-7d93c33f5d07?w=600&q=80" alt="Sacred geometry tattoo" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span class="gallery-label">Sacred Geometry</span>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="blackwork" data-title="Black Work Back Piece" data-desc="Expansive black work covering the full back">
-                    <img src="https://images.unsplash.com/photo-1617791160536-598cf32026fb?w=600&q=80" alt="Black work back tattoo" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span class="gallery-label">Black Work</span>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="ornamental" data-title="Ornamental Armband" data-desc="Architectural ornamental armband with symmetrical detailing">
-                    <img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=600&q=80" alt="Ornamental armband tattoo" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span class="gallery-label">Ornamental</span>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="fineline" data-title="Fine Line Mandala" data-desc="Delicate fine line mandala with sacred geometry elements">
-                    <img src="https://images.unsplash.com/photo-1568515387631-8b650bbcdb90?w=600&q=80" alt="Fine line mandala" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span class="gallery-label">Fine Line</span>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="blackwork" data-title="Black Work Floral" data-desc="Dark botanical study in pure black work">
-                    <img src="https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?w=600&q=80" alt="Black work floral tattoo" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span class="gallery-label">Black Work</span>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="geometry" data-title="Geometric Forearm" data-desc="Precise geometric forms with metatronic structure">
-                    <img src="https://images.unsplash.com/photo-1556820685-ecbe0e27b7e9?w=600&q=80" alt="Geometric forearm tattoo" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span class="gallery-label">Sacred Geometry</span>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="ornamental" data-title="Ornamental Sternum" data-desc="Ornamental sternum piece with chandelier composition">
-                    <img src="https://images.unsplash.com/photo-1565058379802-bbe93b2f703a?w=600&q=80" alt="Ornamental sternum tattoo" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span class="gallery-label">Ornamental</span>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="blackwork" data-title="Dark Botanical" data-desc="Healed black work botanical with stippling and linework">
-                    <img src="https://images.unsplash.com/photo-1513870093429-9cf7f4c77869?w=600&q=80" alt="Healed black botanical tattoo" loading="lazy">
-                    <div class="gallery-overlay">
-                        <span class="gallery-label">Black Work</span>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="gallery-more">
-                <a href="https://instagram.com/tattoosbyaketh" class="btn btn-outline" target="_blank">→ See Full Portfolio on Instagram</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <p class="section-eyebrow">What I Do</p>
-                <h2>Services</h2>
-                <p>Every piece is custom — designed for your body, your story</p>
-            </div>
-            <div class="services-grid">
-
-                <div class="service-card">
-                    <div class="service-icon">◈</div>
-                    <h3>Custom Black Work</h3>
-                    <p>Bespoke black work designed specifically for you — from intimate pieces to full body compositions. Bold, dark, architectural.</p>
-                    <ul class="service-features">
-                        <li>Full consultation process</li>
-                        <li>Custom reference drawing</li>
-                        <li>Placement planning</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">✦</div>
-                    <h3>Ornamental Design</h3>
-                    <p>Decorative, layered ornamental work drawing from Art Nouveau, Islamic geometry, Baroque, and Eastern traditions.</p>
-                    <ul class="service-features">
-                        <li>Symmetrical compositions</li>
-                        <li>Jewelry-inspired motifs</li>
-                        <li>Multi-session pieces</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">⬡</div>
-                    <h3>Sacred Geometry</h3>
-                    <p>Precise geometric tattoos rooted in sacred mathematical principles — Flower of Life, Metatron's Cube, Platonic solids and beyond.</p>
-                    <ul class="service-features">
-                        <li>Mathematically precise</li>
-                        <li>Dotwork &amp; linework</li>
-                        <li>Spiritual symbolism</li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">↗</div>
-                    <h3>Guest Spots &amp; Travel</h3>
-                    <p>Israel travels internationally for guest spots. If you'd like to be tattooed during a visit to your city, reach out early — spots fill fast.</p>
-                    <ul class="service-features">
-                        <li>International guest spots</li>
-                        <li>Convention appearances</li>
-                        <li>Private travel sessions</li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="pricing-note">
-                <p><strong>Consultation:</strong> All bookings begin with a consultation — via email or in-person at Mindtrip Studio. No walk-ins for custom work.</p>
-                <p><strong>Deposit:</strong> A non-refundable deposit is required to hold your date. Applied to the final session cost.</p>
-                <p><strong>International Clients:</strong> Israel regularly works with clients who travel to Ko Samui specifically for their tattoo. Accommodation suggestions available on request.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Studio Section -->
-    <section id="studio" class="location">
-        <div class="container">
-            <div class="section-header">
-                <p class="section-eyebrow">Where</p>
-                <h2>Mindtrip Studio</h2>
-                <p>Ko Samui, Thailand — a creative sanctuary for serious work</p>
-            </div>
-            <div class="location-content">
-                <div class="location-info">
-                    <div class="studio-details">
-                        <div class="studio-detail-item">
-                            <div class="studio-detail-icon">📍</div>
-                            <div>
-                                <strong>Location</strong>
-                                <p>Mindtrip Studio<br>Ko Samui, Surat Thani<br>Thailand 🇹🇭</p>
-                            </div>
-                        </div>
-                        <div class="studio-detail-item">
-                            <div class="studio-detail-icon">📧</div>
-                            <div>
-                                <strong>Email</strong>
-                                <p><a href="mailto:tattoosbypaketh@gmail.com">tattoosbypaketh@gmail.com</a></p>
-                            </div>
-                        </div>
-                        <div class="studio-detail-item">
-                            <div class="studio-detail-icon">📸</div>
-                            <div>
-                                <strong>Instagram</strong>
-                                <p>
-                                    <a href="https://instagram.com/tattoosbyaketh" target="_blank">@tattoosbyaketh</a><br>
-                                    <a href="https://instagram.com/mindtripstudio" target="_blank">@mindtripstudio</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="studio-detail-item">
-                            <div class="studio-detail-icon">🗓</div>
-                            <div>
-                                <strong>Availability</strong>
-                                <p>Currently booking 2026<br>International travel dates TBA</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="studio-image-strip">
-                        <img src="https://images.unsplash.com/photo-1591604021695-0c69b7c05981?w=500&q=80" alt="Ko Samui Thailand" loading="lazy">
-                        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=500&q=80" alt="Tropical studio" loading="lazy">
-                    </div>
-                </div>
-                <div class="location-map">
-                    <div class="map-container">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250133.58779785668!2d100.06320339453125!3d9.548545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3054fe19cc11bb55%3A0x22dff46d7516c0f2!2sKo%20Samui%2C%20Surat%20Thani%2C%20Thailand!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-                            width="100%"
-                            height="380"
-                            style="border:0;"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sponsors Section -->
-    <section class="sponsors-section">
-        <div class="container">
-            <div class="section-header">
-                <p class="section-eyebrow">Trusted By</p>
-                <h2>Sponsors &amp; Partners</h2>
-            </div>
-            <div class="sponsors-grid">
-                <a href="https://instagram.com/eztattooing" target="_blank" class="sponsor-card">
-                    <div class="sponsor-icon">⚡</div>
-                    <div class="sponsor-name">EZ Tattooing</div>
-                    <div class="sponsor-handle">@eztattooing</div>
-                    <p class="sponsor-desc">Premium tattoo machines &amp; equipment</p>
-                </a>
-                <a href="https://instagram.com/inklabtattoomachine" target="_blank" class="sponsor-card">
-                    <div class="sponsor-icon">🔩</div>
-                    <div class="sponsor-name">Inklab Tattoo Machine</div>
-                    <div class="sponsor-handle">@inklabtattoomachine</div>
-                    <p class="sponsor-desc">Professional rotary machines</p>
-                </a>
-                <a href="https://instagram.com/kurikara_markers" target="_blank" class="sponsor-card">
-                    <div class="sponsor-icon">✏️</div>
-                    <div class="sponsor-name">Kurikara Markers</div>
-                    <div class="sponsor-handle">@kurikara_markers</div>
-                    <p class="sponsor-desc">Precision stencil &amp; design markers</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Jewelry Section -->
-    <section class="jewelry-section">
-        <div class="container">
-            <div class="jewelry-content">
-                <div class="jewelry-text">
-                    <p class="section-eyebrow">Beyond The Needle</p>
-                    <h2>Inner Pyramids Jewelry</h2>
-                    <p>Israel's love of sacred geometry and symbolism extends beyond tattooing into handcrafted jewelry. <strong>Inner Pyramids</strong> is a collection of wearable art — each piece a meditation on form, symmetry, and meaning.</p>
-                    <p>Rings, pendants, and talismans inspired by the same geometric principles that define his tattoo work.</p>
-                    <a href="https://instagram.com/inner.pyramids.jewelry" target="_blank" class="btn btn-outline">→ @inner.pyramids.jewelry</a>
-                </div>
-                <div class="jewelry-images">
-                    <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&q=80" alt="Sacred geometry jewelry" loading="lazy">
-                    <img src="https://images.unsplash.com/photo-1573408301185-9519f94ebedf?w=600&q=80" alt="Handcrafted rings" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Email Capture -->
-    <section class="email-capture">
-        <div class="container">
-            <div class="capture-content">
-                <div class="capture-text">
-                    <h2>Stay Updated</h2>
-                    <p>Be first to know about travel dates, guest spots, and 2026 booking openings.</p>
-                </div>
-                <form class="capture-form" action="https://formsubmit.co/tattoosbypaketh@gmail.com" method="POST">
-                    <input type="hidden" name="_subject" value="New Email Signup — Israel Paketh">
-                    <input type="email" name="email" placeholder="Enter your email" required>
-                    <button type="submit" class="btn btn-primary">Notify Me</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="section-header" style="text-align:left;">
-                        <p class="section-eyebrow">Get In Touch</p>
-                        <h2>Book Your Consultation</h2>
-                    </div>
-                    <p style="color: var(--text-muted); margin-bottom: 2rem;">Currently booking 2026. International clients welcome — Ko Samui is worth the trip.</p>
-
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <div class="contact-icon">📧</div>
-                            <div>
-                                <strong>Email (Preferred)</strong>
-                                <p><a href="mailto:tattoosbypaketh@gmail.com">tattoosbypaketh@gmail.com</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <div class="contact-icon">📍</div>
-                            <div>
-                                <strong>Studio</strong>
-                                <p>Mindtrip Studio, Ko Samui, Thailand</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://instagram.com/tattoosbyaketh" target="_blank" class="social-link">
-                            <span class="social-icon">📸</span> @tattoosbyaketh
-                        </a>
-                        <a href="https://instagram.com/mindtripstudio" target="_blank" class="social-link">
-                            <span class="social-icon">🏠</span> @mindtripstudio
-                        </a>
-                        <a href="https://instagram.com/inner.pyramids.jewelry" target="_blank" class="social-link">
-                            <span class="social-icon">💎</span> @inner.pyramids.jewelry
-                        </a>
-                        <a href="https://instagram.com/mindtriporiginal" target="_blank" class="social-link">
-                            <span class="social-icon">✨</span> @mindtriporiginal
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <form action="https://formsubmit.co/tattoosbypaketh@gmail.com" method="POST">
-                        <input type="hidden" name="_subject" value="Tattoo Inquiry — Israel Paketh">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <input type="text" name="location" placeholder="Your Location / Country">
-                        <select name="service">
-                            <option value="">What are you looking for?</option>
-                            <option value="blackwork">Custom Black Work</option>
-                            <option value="ornamental">Ornamental Design</option>
-                            <option value="geometry">Sacred Geometry</option>
-                            <option value="fineline">Fine Line / Dotwork</option>
-                            <option value="guestspot">Guest Spot (your city)</option>
-                            <option value="travel">Traveling to Ko Samui</option>
-                            <option value="other">Other / Not Sure</option>
-                        </select>
-                        <select name="size">
-                            <option value="">Approximate size?</option>
-                            <option value="small">Small (up to 3")</option>
-                            <option value="medium">Medium (3–6")</option>
-                            <option value="large">Large (6–12")</option>
-                            <option value="xlarge">X-Large / Sleeve / Back Piece</option>
-                        </select>
-                        <textarea name="message" placeholder="Tell me about your tattoo idea — placement, style references, inspiration..." rows="5" required></textarea>
-                        <button type="submit" class="btn btn-primary">Send Inquiry</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Floating CTA -->
-    <div class="floating-cta" id="floatingCTA">
-        <a href="mailto:tattoosbypaketh@gmail.com" class="floating-btn">
-            <span class="floating-icon">📅</span>
-            <span class="floating-text">Inquire 2026</span>
-        </a>
+    <div class="stats">
+      <div>
+        <div class="stat-number">101K+</div>
+        <div class="stat-label">Followers</div>
+      </div>
+      <div>
+        <div class="stat-number">10+</div>
+        <div class="stat-label">Years</div>
+      </div>
+      <div>
+        <div class="stat-number">∞</div>
+        <div class="stat-label">Precision</div>
+      </div>
     </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>ISRAEL PAKETH <span style="font-size: 1.1em;">🇦🇷🇹🇭</span></h3>
-                    <p>Black Work &amp; Ornamental Tattoo Artist<br>Ko Samui, Thailand · Booking 2026</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Navigate</h4>
-                        <a href="#about">About</a>
-                        <a href="#gallery">Gallery</a>
-                        <a href="#services">Services</a>
-                        <a href="#studio">Studio</a>
-                        <a href="#contact">Contact</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Accounts</h4>
-                        <a href="https://instagram.com/tattoosbyaketh" target="_blank">@tattoosbyaketh</a>
-                        <a href="https://instagram.com/mindtripstudio" target="_blank">@mindtripstudio</a>
-                        <a href="https://instagram.com/inner.pyramids.jewelry" target="_blank">@inner.pyramids.jewelry</a>
-                        <a href="https://instagram.com/mindtriporiginal" target="_blank">@mindtriporiginal</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Client Area</h4>
-                        <a href="changes.html">Request Changes</a>
-                        <a href="stats.html">Analytics</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Israel Paketh. All rights reserved.</p>
-                <p class="footer-credit"><a href="https://bayouwebstudio.com" target="_blank" style="color: inherit; text-decoration: none; opacity: 0.5; font-size: 12px;">Powered by BWS</a></p>
-            </div>
-        </div>
-    </footer>
+<!-- BOOKING -->
+<section id="booking" class="booking-section">
+  <p class="section-label reveal">Appointments</p>
+  <h2 class="section-title reveal">Booking 2026</h2>
+  <div class="divider reveal"></div>
+  <p class="booking-text reveal">Now accepting bookings for 2026 sessions in Koh Samui, Thailand and Buenos Aires, Argentina. Large-scale projects, single sessions, and cover-ups welcome.</p>
+  <a href="https://allmylinks.com/mindtripstudio" target="_blank" rel="noopener" class="btn-book reveal">Book Your Session</a>
+  <span class="contact-email reveal">or email <a href="mailto:Tattoosbypaketh@gmail.com">Tattoosbypaketh@gmail.com</a></span>
+</section>
 
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
-        <div class="lightbox-content">
-            <span class="lightbox-close">&times;</span>
-            <img id="lightbox-image" src="" alt="">
-            <div class="lightbox-info">
-                <h3 id="lightbox-title"></h3>
-                <p id="lightbox-description"></p>
-            </div>
-        </div>
-    </div>
+<!-- FLOATING BOOK NOW -->
+<a href="https://allmylinks.com/mindtripstudio" target="_blank" rel="noopener" class="fab-book" id="fabBook">Book Now</a>
 
-    <script src="script.js"></script>
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-close">✕</div>
+  <div class="lightbox-nav lightbox-prev">‹</div>
+  <div class="lightbox-nav lightbox-next">›</div>
+  <img src="" alt="Tattoo by Israel Paketh">
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/tattoosbypaketh/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.instagram.com/mindtripstudio/" target="_blank" rel="noopener">Studio</a>
+    <a href="mailto:Tattoosbypaketh@gmail.com">Email</a>
+  </div>
+  <p class="footer-credit">Site by <a href="https://bayouwebstudio.com" target="_blank" rel="noopener">Bayou Web Studio</a></p>
+</footer>
+
+<script>
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
+}, { threshold: 0.1 });
+
+reveals.forEach(el => observer.observe(el));
+galleryItems.forEach((el, i) => {
+  el.style.transitionDelay = `${i * 80}ms`;
+  observer.observe(el);
+});
+
+// FAB show on scroll
+const fab = document.getElementById('fabBook');
+window.addEventListener('scroll', () => {
+  fab.classList.toggle('visible', window.scrollY > 400);
+}, { passive: true });
+
+// Lightbox
+const lightbox = document.getElementById('lightbox');
+const lbImg = lightbox.querySelector('img');
+const images = Array.from(document.querySelectorAll('.gallery-item img'));
+let currentIdx = 0;
+
+function openLightbox(idx) {
+  currentIdx = idx;
+  lbImg.src = images[idx].src;
+  lightbox.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+function navLightbox(dir) {
+  currentIdx = (currentIdx + dir + images.length) % images.length;
+  lbImg.src = images[currentIdx].src;
+}
+
+galleryItems.forEach((item, i) => item.addEventListener('click', () => openLightbox(i)));
+lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+lightbox.querySelector('.lightbox-prev').addEventListener('click', (e) => { e.stopPropagation(); navLightbox(-1); });
+lightbox.querySelector('.lightbox-next').addEventListener('click', (e) => { e.stopPropagation(); navLightbox(1); });
+lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', (e) => {
+  if (!lightbox.classList.contains('active')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') navLightbox(-1);
+  if (e.key === 'ArrowRight') navLightbox(1);
+});
+</script>
 </body>
 </html>
