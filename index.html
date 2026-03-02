@@ -1,648 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Israel Paketh — Geometric · Blackwork · Ornamental Tattoo Artist</title>
-<meta name="description" content="Israel Paketh is an internationally renowned geometric, blackwork, and ornamental tattoo artist based in Argentina and Thailand. 101K+ followers. Book your session now.">
-<meta name="keywords" content="Israel Paketh, geometric tattoo, blackwork tattoo, ornamental tattoo, tattoo artist Argentina, tattoo artist Thailand, sacred geometry tattoo, mindtrip studio">
-<meta name="author" content="Israel Paketh">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://tattoosbypaketh.com">
-
-<!-- Open Graph -->
-<meta property="og:title" content="Israel Paketh — Geometric · Blackwork · Ornamental">
-<meta property="og:description" content="Internationally renowned tattoo artist specializing in geometric, blackwork & ornamental work. Based in Argentina 🇦🇷 & Thailand 🇹🇭. Now booking 2026.">
-<meta property="og:image" content="https://tattoosbypaketh.com/img/tattoo-01.jpg">
-<meta property="og:url" content="https://tattoosbypaketh.com">
-<meta property="og:type" content="website">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Israel Paketh — Geometric · Blackwork · Ornamental">
-<meta name="twitter:description" content="International tattoo artist. Geometric · Blackwork · Ornamental. Booking 2026.">
-<meta name="twitter:image" content="https://tattoosbypaketh.com/img/tattoo-01.jpg">
-
-<!-- JSON-LD Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TattooParlor",
-  "name": "Israel Paketh Tattoo",
-  "alternateName": "tattoosbypaketh",
-  "description": "Internationally renowned geometric, blackwork, and ornamental tattoo artist",
-  "url": "https://tattoosbypaketh.com",
-  "email": "Tattoosbypaketh@gmail.com",
-  "image": "https://tattoosbypaketh.com/img/tattoo-01.jpg",
-  "sameAs": [
-    "https://www.instagram.com/tattoosbypaketh/",
-    "https://www.instagram.com/mindtripstudio/",
-    "https://allmylinks.com/mindtripstudio"
-  ],
-  "founder": {
-    "@type": "Person",
-    "name": "Israel Paketh",
-    "jobTitle": "Tattoo Artist",
-    "knowsAbout": ["Geometric Tattoo", "Blackwork Tattoo", "Ornamental Tattoo", "Sacred Geometry"]
-  },
-  "areaServed": ["Argentina", "Thailand", "International"],
-  "priceRange": "$$$$"
-}
-</script>
-
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
-<style>
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-:root {
-  --bg: #0a0a0a;
-  --bg-card: #111111;
-  --gold: #C9A84C;
-  --gold-dim: #A8893D;
-  --gold-glow: rgba(201, 168, 76, 0.15);
-  --text: #e8e8e8;
-  --text-dim: #888888;
-  --serif: 'Cormorant Garamond', Georgia, serif;
-  --sans: 'Inter', -apple-system, sans-serif;
-}
-
-html { scroll-behavior: smooth; }
-
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--sans);
-  font-weight: 300;
-  line-height: 1.6;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Scrollbar */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 3px; }
-
-/* ── HERO ── */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
-  position: relative;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: radial-gradient(ellipse at center, var(--gold-glow) 0%, transparent 70%);
-  pointer-events: none;
-}
-
-.hero-line {
-  width: 1px;
-  height: 80px;
-  background: linear-gradient(to bottom, transparent, var(--gold));
-  margin-bottom: 2rem;
-}
-
-.hero h1 {
-  font-family: var(--serif);
-  font-weight: 300;
-  font-size: clamp(2.5rem, 8vw, 5.5rem);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--text);
-  margin-bottom: 1rem;
-}
-
-.hero-tags {
-  font-family: var(--sans);
-  font-size: clamp(0.75rem, 2vw, 0.95rem);
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 1.5rem;
-  font-weight: 400;
-}
-
-.hero-location {
-  font-size: 0.85rem;
-  color: var(--text-dim);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-
-.hero-location span { color: var(--gold-dim); }
-
-.hero-scroll {
-  position: absolute;
-  bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--text-dim);
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  animation: pulse 2s ease-in-out infinite;
-}
-
-.hero-scroll svg {
-  width: 20px;
-  height: 20px;
-  stroke: var(--gold-dim);
-}
-
-@keyframes pulse {
-  0%, 100% { opacity: 0.4; transform: translateY(0); }
-  50% { opacity: 1; transform: translateY(4px); }
-}
-
-/* ── SECTIONS ── */
-section { padding: 5rem 1.5rem; max-width: 1200px; margin: 0 auto; }
-
-.section-label {
-  font-size: 0.7rem;
-  letter-spacing: 0.4em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 0.75rem;
-}
-
-.section-title {
-  font-family: var(--serif);
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
-  font-weight: 300;
-  letter-spacing: 0.05em;
-  margin-bottom: 2rem;
-}
-
-.divider {
-  width: 60px;
-  height: 1px;
-  background: var(--gold);
-  margin: 0 auto 3rem;
-}
-
-/* ── GALLERY ── */
-.gallery {
-  columns: 2;
-  column-gap: 12px;
-}
-
-.gallery-item {
-  break-inside: avoid;
-  margin-bottom: 12px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.gallery-item img {
-  width: 100%;
-  display: block;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s;
-  filter: brightness(0.9);
-}
-
-.gallery-item:hover img {
-  transform: scale(1.03);
-  filter: brightness(1);
-}
-
-.gallery-item::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  transition: border-color 0.3s;
-}
-
-.gallery-item:hover::after {
-  border-color: var(--gold-dim);
-}
-
-@media (min-width: 768px) {
-  .gallery { columns: 3; column-gap: 16px; }
-  .gallery-item { margin-bottom: 16px; }
-}
-
-/* ── ABOUT ── */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  max-width: 800px;
-}
-
-.about-text {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: var(--text-dim);
-}
-
-.about-text strong { color: var(--text); font-weight: 400; }
-
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid #1a1a1a;
-}
-
-.stat-number {
-  font-family: var(--serif);
-  font-size: 2rem;
-  color: var(--gold);
-  font-weight: 300;
-}
-
-.stat-label {
-  font-size: 0.7rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-  margin-top: 0.25rem;
-}
-
-/* ── BOOKING ── */
-.booking-section {
-  text-align: center;
-  padding: 6rem 1.5rem;
-}
-
-.booking-section .section-title { margin-bottom: 1rem; }
-
-.booking-text {
-  color: var(--text-dim);
-  max-width: 500px;
-  margin: 0 auto 2.5rem;
-  font-size: 0.95rem;
-  line-height: 1.7;
-}
-
-.btn-book {
-  display: inline-block;
-  padding: 1rem 3rem;
-  background: transparent;
-  border: 1px solid var(--gold);
-  color: var(--gold);
-  font-family: var(--sans);
-  font-size: 0.8rem;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: all 0.4s;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-book::before {
-  content: '';
-  position: absolute;
-  top: 0; left: -100%; width: 100%; height: 100%;
-  background: var(--gold);
-  transition: left 0.4s;
-  z-index: -1;
-}
-
-.btn-book:hover::before { left: 0; }
-.btn-book:hover { color: var(--bg); }
-
-.contact-email {
-  display: block;
-  margin-top: 2rem;
-  color: var(--text-dim);
-  font-size: 0.85rem;
-  letter-spacing: 0.1em;
-}
-
-.contact-email a {
-  color: var(--gold-dim);
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.contact-email a:hover { color: var(--gold); }
-
-/* ── FLOATING BOOK NOW ── */
-.fab-book {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  z-index: 900;
-  background: var(--gold);
-  color: var(--bg);
-  padding: 0.9rem 1.8rem;
-  font-family: var(--sans);
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 2px;
-  box-shadow: 0 4px 20px rgba(201, 168, 76, 0.3);
-  transition: all 0.3s;
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-.fab-book.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.fab-book:hover {
-  box-shadow: 0 6px 30px rgba(201, 168, 76, 0.5);
-  transform: translateY(-2px);
-}
-
-/* ── FOOTER ── */
-footer {
-  text-align: center;
-  padding: 3rem 1.5rem;
-  border-top: 1px solid #151515;
-}
-
-.footer-social {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.footer-social a {
-  color: var(--text-dim);
-  text-decoration: none;
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  transition: color 0.3s;
-}
-
-.footer-social a:hover { color: var(--gold); }
-
-.footer-credit {
-  font-size: 0.65rem;
-  color: var(--text-dim);
-  opacity: 0.5;
-  letter-spacing: 0.1em;
-}
-
-.footer-credit a { color: var(--text-dim); text-decoration: none; }
-.footer-credit a:hover { color: var(--gold); opacity: 1; }
-
-/* ── LIGHTBOX ── */
-.lightbox {
-  position: fixed;
-  inset: 0;
-  z-index: 1000;
-  background: rgba(0,0,0,0.95);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s;
-  cursor: zoom-out;
-}
-
-.lightbox.active { opacity: 1; pointer-events: all; }
-
-.lightbox img {
-  max-width: 90vw;
-  max-height: 90vh;
-  object-fit: contain;
-  border-radius: 4px;
-  transform: scale(0.9);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.lightbox.active img { transform: scale(1); }
-
-.lightbox-close {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-dim);
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.lightbox-close:hover { color: var(--gold); }
-
-.lightbox-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--text-dim);
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 1rem;
-  transition: color 0.3s;
-  user-select: none;
-}
-
-.lightbox-nav:hover { color: var(--gold); }
-.lightbox-prev { left: 1rem; }
-.lightbox-next { right: 1rem; }
-
-/* ── REVEAL ANIMATION ── */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Staggered children */
-.gallery-item {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s, transform 0.6s;
-}
-
-.gallery-item.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Israel Paketh | Blackwork & Ornamental Tattoo Artist</title>
+  <meta name="description" content="Israel Paketh — Blackwork, geometric, and ornamental tattoo artist. Booking 2026. Contact: tattoosbypaketh@gmail.com" />
+  <meta name="keywords" content="Israel Paketh, tattoosbypaketh, blackwork tattoo, ornamental tattoo, geometric tattoo, tattoo artist" />
+
+  <meta property="og:title" content="Israel Paketh | Blackwork & Ornamental Tattoo" />
+  <meta property="og:description" content="Blackwork, geometric, and ornamental tattoo artist. Booking 2026." />
+  <meta property="og:image" content="https://tattoosbypaketh.com/img/tattoo_01.jpg" />
+  <meta property="og:url" content="https://tattoosbypaketh.com/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Israel Paketh | Blackwork & Ornamental Tattoo" />
+  <meta name="twitter:image" content="https://tattoosbypaketh.com/img/tattoo_01.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Israel Paketh — Tattoo Artist",
+    "description": "Blackwork, geometric, and ornamental tattoo artist.",
+    "url": "https://tattoosbypaketh.com/",
+    "image": "https://tattoosbypaketh.com/img/tattoo_01.jpg",
+    "email": "tattoosbypaketh@gmail.com",
+    "sameAs": ["https://www.instagram.com/tattoosbypaketh/"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --gold: #C9A07A;
+      --black: #0a0a0a;
+      --dark: #111111;
+      --darker: #0d0d0d;
+      --text: #e8e8e8;
+      --muted: #888;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--black); color: var(--text); font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; overflow-x: hidden; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 2.5rem; background: rgba(10,10,10,0.88); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(201,160,122,0.12); }
+    .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--gold); letter-spacing: 0.05em; text-decoration: none; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.3s; }
+    .nav-links a:hover { color: var(--gold); }
+
+    /* HERO */
+    #hero { position: relative; height: 100vh; min-height: 600px; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; background-image: url('img/tattoo_01.jpg'); background-size: cover; background-position: center; filter: brightness(0.28); transform: scale(1.05); transition: transform 8s ease; }
+    #hero:hover .hero-bg { transform: scale(1.0); }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,10,10,0.2) 0%, rgba(10,10,10,0.75) 100%); }
+    .hero-content { position: relative; z-index: 2; max-width: 800px; padding: 0 1.5rem; }
+    .hero-eyebrow { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
+    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(3rem, 8vw, 6.5rem); font-weight: 900; line-height: 1.0; color: #fff; margin-bottom: 1.2rem; }
+    .hero-subtitle { font-size: clamp(0.9rem, 2vw, 1.1rem); color: rgba(255,255,255,0.6); font-weight: 300; letter-spacing: 0.06em; margin-bottom: 2.5rem; }
+    .hero-cta { display: inline-block; padding: 0.9rem 2.8rem; background: var(--gold); color: var(--black); text-decoration: none; font-weight: 600; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; border: 2px solid var(--gold); transition: all 0.3s; }
+    .hero-cta:hover { background: transparent; color: var(--gold); }
+    .hero-scroll { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.35); font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; animation: bounce 2.2s infinite; }
+    .scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, var(--gold), transparent); }
+    @keyframes bounce { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(7px); } }
+
+    /* SECTIONS */
+    section { padding: 7rem 1.5rem; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.8rem; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; line-height: 1.15; margin-bottom: 1.5rem; }
+    .divider { width: 48px; height: 1px; background: var(--gold); margin: 1.5rem 0 2rem; }
+
+    /* ABOUT */
+    #about { background: var(--dark); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .about-img-wrap { position: relative; }
+    .about-img-wrap::before { content: ''; position: absolute; top: 18px; left: 18px; right: -18px; bottom: -18px; border: 1px solid rgba(201,160,122,0.3); pointer-events: none; }
+    .about-img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; filter: grayscale(15%); }
+    .about-text p { color: rgba(232,232,232,0.72); font-size: 1rem; line-height: 1.85; margin-bottom: 1.4rem; }
+    .about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; padding-top: 2.5rem; border-top: 1px solid rgba(201,160,122,0.15); }
+    .stat-number { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 700; color: var(--gold); display: block; }
+    .stat-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); }
+
+    /* GALLERY */
+    #gallery { background: var(--black); }
+    .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .gallery-item { position: relative; overflow: hidden; cursor: pointer; }
+    .gallery-item img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; transition: transform 0.6s ease, filter 0.4s ease; filter: grayscale(10%); }
+    .gallery-item:hover img { transform: scale(1.06); filter: grayscale(0%); }
+    .gallery-item-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,0.75) 0%, transparent 50%); opacity: 0; transition: opacity 0.4s; display: flex; align-items: flex-end; padding: 1.2rem; }
+    .gallery-item:hover .gallery-item-overlay { opacity: 1; }
+    .gallery-item-overlay span { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); }
+
+    /* STYLES */
+    #styles { background: var(--darker); }
+    .styles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+    .style-card { border: 1px solid rgba(201,160,122,0.18); padding: 2rem 1.5rem; transition: border-color 0.3s, background 0.3s; }
+    .style-card:hover { border-color: var(--gold); background: rgba(201,160,122,0.04); }
+    .style-icon { font-size: 1.8rem; margin-bottom: 1rem; }
+    .style-card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; margin-bottom: 0.7rem; }
+    .style-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
+
+    /* BOOKING */
+    #booking { background: var(--dark); }
+    .booking-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+    .booking-info p { color: rgba(232,232,232,0.7); font-size: 0.95rem; line-height: 1.9; margin-bottom: 1.2rem; }
+    .booking-contact-list { list-style: none; margin-top: 2rem; }
+    .booking-contact-list li { padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; gap: 1rem; }
+    .booking-contact-list li:first-child { border-top: 1px solid rgba(255,255,255,0.06); }
+    .contact-icon { width: 38px; height: 38px; border-radius: 50%; background: rgba(201,160,122,0.1); border: 1px solid rgba(201,160,122,0.25); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .contact-detail { display: flex; flex-direction: column; }
+    .contact-label { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+    .contact-value { font-size: 0.92rem; color: var(--text); }
+    .contact-value a { color: var(--gold); text-decoration: none; }
+    .contact-value a:hover { text-decoration: underline; }
+    .booking-form-box { background: rgba(255,255,255,0.02); border: 1px solid rgba(201,160,122,0.15); padding: 2.5rem; }
+    .booking-form-box h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .booking-form-box > p { font-size: 0.88rem; color: var(--muted); margin-bottom: 2rem; }
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label { display: block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem; }
+    .form-group input, .form-group textarea, .form-group select { width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); color: var(--text); padding: 0.75rem 1rem; font-family: 'Inter', sans-serif; font-size: 0.9rem; outline: none; transition: border-color 0.3s; -webkit-appearance: none; }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--gold); }
+    .form-group textarea { resize: vertical; min-height: 110px; }
+    .form-submit { width: 100%; background: var(--gold); color: var(--black); border: 2px solid var(--gold); padding: 0.9rem 2rem; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; transition: all 0.3s; }
+    .form-submit:hover { background: transparent; color: var(--gold); }
+
+    /* FLOAT BOOK */
+    .float-book { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; background: var(--gold); color: var(--black); padding: 0.85rem 1.8rem; text-decoration: none; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; box-shadow: 0 8px 32px rgba(201,160,122,0.35); transition: all 0.3s; border: 2px solid var(--gold); }
+    .float-book:hover { background: transparent; color: var(--gold); box-shadow: 0 8px 32px rgba(201,160,122,0.2); }
+
+    /* FOOTER */
+    footer { background: var(--darker); border-top: 1px solid rgba(255,255,255,0.05); padding: 3rem 1.5rem; text-align: center; }
+    .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--gold); margin-bottom: 1rem; display: block; }
+    .footer-links { display: flex; justify-content: center; gap: 2rem; margin: 1.5rem 0; list-style: none; }
+    .footer-links a { color: var(--muted); text-decoration: none; font-size: 0.8rem; transition: color 0.3s; }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy { font-size: 0.75rem; color: rgba(136,136,136,0.5); margin-top: 1.5rem; }
+    .bws-credit { font-size: 0.7rem; color: rgba(136,136,136,0.5); margin-top: 0.6rem; }
+    .bws-credit a { color: rgba(201,160,122,0.5); text-decoration: none; transition: color 0.3s; }
+    .bws-credit a:hover { color: var(--gold); }
+
+    /* FADE IN */
+    .fade-in { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.5rem; }
+      .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .booking-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .styles-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+      .styles-grid { grid-template-columns: 1fr; }
+      .float-book { bottom: 1.2rem; right: 1.2rem; padding: 0.75rem 1.4rem; }
+    }
+  </style>
 </head>
 <body>
 
-<!-- HERO -->
-<header class="hero">
-  <div class="hero-line"></div>
-  <h1>Israel Paketh</h1>
-  <p class="hero-tags">Geometric · Blackwork · Ornamental</p>
-  <p class="hero-location">Argentina <span>🇦🇷</span> · Thailand <span>🇹🇭</span> · International</p>
-  <div class="hero-scroll">
-    <span>Scroll</span>
-    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-  </div>
-</header>
+  <nav>
+    <a href="#hero" class="nav-logo">Israel Paketh</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#styles">Styles</a></li>
+      <li><a href="#booking">Book</a></li>
+    </ul>
+  </nav>
 
-<!-- GALLERY -->
-<section id="work">
-  <p class="section-label reveal">Portfolio</p>
-  <h2 class="section-title reveal">Selected Work</h2>
-  <div class="divider reveal"></div>
-  <div class="gallery">
-    <div class="gallery-item" data-index="0"><img src="img/tattoo-01.jpg" alt="Geometric blackwork tattoo by Israel Paketh" loading="lazy"></div>
-    <div class="gallery-item" data-index="1"><img src="img/tattoo-02.jpg" alt="Ornamental tattoo design by Israel Paketh" loading="lazy"></div>
-    <div class="gallery-item" data-index="2"><img src="img/tattoo-03.jpg" alt="Blackwork back piece by Israel Paketh" loading="lazy"></div>
-    <div class="gallery-item" data-index="3"><img src="img/tattoo-04.jpg" alt="Sacred geometry tattoo by Israel Paketh" loading="lazy"></div>
-    <div class="gallery-item" data-index="4"><img src="img/tattoo-05.jpg" alt="Ornamental body tattoo by Israel Paketh" loading="lazy"></div>
-    <div class="gallery-item" data-index="5"><img src="img/tattoo-06.jpg" alt="Geometric sleeve tattoo by Israel Paketh" loading="lazy"></div>
-    <div class="gallery-item" data-index="6"><img src="img/tattoo-07.jpg" alt="Blackwork ornamental tattoo by Israel Paketh" loading="lazy"></div>
-    <div class="gallery-item" data-index="7"><img src="img/tattoo-08.jpg" alt="Geometric chest piece by Israel Paketh" loading="lazy"></div>
-    <div class="gallery-item" data-index="8"><img src="img/tattoo-09.jpg" alt="Ornamental blackwork by Israel Paketh" loading="lazy"></div>
-    <div class="gallery-item" data-index="9"><img src="img/tattoo-10.jpg" alt="Sacred geometry blackwork by Israel Paketh" loading="lazy"></div>
-    <div class="gallery-item" data-index="10"><img src="img/tattoo-11.jpg" alt="Geometric ornamental tattoo by Israel Paketh" loading="lazy"></div>
-    <div class="gallery-item" data-index="11"><img src="img/tattoo-12.jpg" alt="Blackwork geometric piece by Israel Paketh" loading="lazy"></div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <p class="section-label reveal">About</p>
-  <h2 class="section-title reveal">The Artist</h2>
-  <div class="divider reveal"></div>
-  <div class="about-grid reveal">
-    <div class="about-text">
-      <p>Israel Paketh is an internationally recognized tattoo artist specializing in <strong>geometric, blackwork, and ornamental</strong> tattooing. Working between <strong>Argentina</strong> and <strong>Koh Samui, Thailand</strong>, he creates bold, intricate designs rooted in sacred geometry, architectural patterns, and ornamental precision.</p>
-      <br>
-      <p>Known for large-scale body projects — full backs, sleeves, and bodysuits — his work balances mathematical precision with organic flow. Each piece is custom-designed, built to complement the body's natural lines and movement.</p>
-      <br>
-      <p>Israel works from <strong>@mindtripstudio</strong> in Koh Samui and travels internationally for conventions and guest spots. His signature style has earned a following of over <strong>101,000</strong> collectors and artists worldwide.</p>
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Blackwork &amp; Ornamental Tattoo</p>
+      <h1 class="hero-title">Israel<br>Paketh</h1>
+      <p class="hero-subtitle">Precision linework. Dark geometry. Permanent art.</p>
+      <a href="#booking" class="hero-cta">Book a Session</a>
     </div>
-    <div class="stats">
-      <div>
-        <div class="stat-number">101K+</div>
-        <div class="stat-label">Followers</div>
-      </div>
-      <div>
-        <div class="stat-number">10+</div>
-        <div class="stat-label">Years</div>
-      </div>
-      <div>
-        <div class="stat-number">∞</div>
-        <div class="stat-label">Precision</div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap fade-in">
+          <img src="img/tattoo_05.jpg" alt="Israel Paketh — Blackwork Tattoo Artist" class="about-img" loading="lazy" />
+        </div>
+        <div class="about-text fade-in">
+          <p class="section-label">About the Artist</p>
+          <h2 class="section-title">Precision.<br>Darkness. Flow.</h2>
+          <div class="divider"></div>
+          <p>Israel Paketh is a blackwork and ornamental tattoo artist known for bold geometric compositions, intricate linework, and deeply intentional designs. Every piece begins as a conversation — a collaboration that results in something truly one of a kind.</p>
+          <p>Specializing in blackwork, geometric, and ornamental styles, Israel creates tattoos that stand the test of time — both in technique and in meaning.</p>
+          <div class="about-stats">
+            <div>
+              <span class="stat-number">596+</span>
+              <span class="stat-label">Posts</span>
+            </div>
+            <div>
+              <span class="stat-number">102K</span>
+              <span class="stat-label">Followers</span>
+            </div>
+            <div>
+              <span class="stat-number">2026</span>
+              <span class="stat-label">Booking Open</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- BOOKING -->
-<section id="booking" class="booking-section">
-  <p class="section-label reveal">Appointments</p>
-  <h2 class="section-title reveal">Booking 2026</h2>
-  <div class="divider reveal"></div>
-  <p class="booking-text reveal">Now accepting bookings for 2026 sessions in Koh Samui, Thailand and Buenos Aires, Argentina. Large-scale projects, single sessions, and cover-ups welcome.</p>
-  <a href="https://allmylinks.com/mindtripstudio" target="_blank" rel="noopener" class="btn-book reveal">Book Your Session</a>
-  <span class="contact-email reveal">or email <a href="mailto:Tattoosbypaketh@gmail.com">Tattoosbypaketh@gmail.com</a></span>
-</section>
+  <section id="gallery">
+    <div class="container">
+      <p class="section-label fade-in">Portfolio</p>
+      <h2 class="section-title fade-in">Recent Work</h2>
+      <div class="divider fade-in"></div>
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in"><img src="img/tattoo_01.jpg" alt="Blackwork tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Blackwork</span></div></div>
+        <div class="gallery-item fade-in"><img src="img/tattoo_02.jpg" alt="Ornamental tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Ornamental</span></div></div>
+        <div class="gallery-item fade-in"><img src="img/tattoo_03.jpg" alt="Geometric tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Geometric</span></div></div>
+        <div class="gallery-item fade-in"><img src="img/tattoo_04.jpg" alt="Blackwork tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Blackwork</span></div></div>
+        <div class="gallery-item fade-in"><img src="img/tattoo_06.jpg" alt="Ornamental tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Ornamental</span></div></div>
+        <div class="gallery-item fade-in"><img src="img/tattoo_07.jpg" alt="Geometric tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Geometric</span></div></div>
+        <div class="gallery-item fade-in"><img src="img/tattoo_08.jpg" alt="Blackwork tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Blackwork</span></div></div>
+        <div class="gallery-item fade-in"><img src="img/tattoo_09.jpg" alt="Ornamental tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Ornamental</span></div></div>
+        <div class="gallery-item fade-in"><img src="img/tattoo_10.jpg" alt="Geometric tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Geometric</span></div></div>
+        <div class="gallery-item fade-in"><img src="img/tattoo_11.jpg" alt="Blackwork tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Blackwork</span></div></div>
+        <div class="gallery-item fade-in"><img src="img/tattoo_12.jpg" alt="Ornamental tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Ornamental</span></div></div>
+      </div>
+    </div>
+  </section>
 
-<!-- FLOATING BOOK NOW -->
-<a href="https://allmylinks.com/mindtripstudio" target="_blank" rel="noopener" class="fab-book" id="fabBook">Book Now</a>
+  <section id="styles">
+    <div class="container">
+      <p class="section-label fade-in">Specialties</p>
+      <h2 class="section-title fade-in">What I Create</h2>
+      <div class="divider fade-in"></div>
+      <div class="styles-grid">
+        <div class="style-card fade-in">
+          <div class="style-icon">◆</div>
+          <h3>Blackwork</h3>
+          <p>Bold, high-contrast designs in pure black ink. Striking visuals built to last a lifetime.</p>
+        </div>
+        <div class="style-card fade-in">
+          <div class="style-icon">✦</div>
+          <h3>Geometric</h3>
+          <p>Sacred geometry, mandalas, and structured patterns crafted with mathematical precision.</p>
+        </div>
+        <div class="style-card fade-in">
+          <div class="style-icon">❧</div>
+          <h3>Ornamental</h3>
+          <p>Decorative elements, floral motifs, and intricate detailing that flow with the body.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox">
-  <div class="lightbox-close">✕</div>
-  <div class="lightbox-nav lightbox-prev">‹</div>
-  <div class="lightbox-nav lightbox-next">›</div>
-  <img src="" alt="Tattoo by Israel Paketh">
-</div>
+  <section id="booking">
+    <div class="container">
+      <p class="section-label fade-in">Get in Touch</p>
+      <h2 class="section-title fade-in">Book a Session</h2>
+      <div class="divider fade-in"></div>
+      <div class="booking-grid">
+        <div class="booking-info fade-in">
+          <p>Ready to start your tattoo journey? I take on a limited number of bookings to ensure every client receives my full attention and best work.</p>
+          <p>Send me an email with your idea, reference images, and preferred placement. I'll get back to you within a few days.</p>
+          <ul class="booking-contact-list">
+            <li>
+              <div class="contact-icon">✉</div>
+              <div class="contact-detail">
+                <span class="contact-label">Email</span>
+                <span class="contact-value"><a href="mailto:tattoosbypaketh@gmail.com">tattoosbypaketh@gmail.com</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon">📷</div>
+              <div class="contact-detail">
+                <span class="contact-label">Instagram</span>
+                <span class="contact-value"><a href="https://www.instagram.com/tattoosbypaketh/" target="_blank" rel="noopener">@tattoosbypaketh</a></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="booking-form-box fade-in">
+          <h3>Start Your Inquiry</h3>
+          <p>Fill out the form and I'll reply via email.</p>
+          <form action="mailto:tattoosbypaketh@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="style">Tattoo Style</label>
+              <select id="style" name="style">
+                <option value="">Select a style...</option>
+                <option>Blackwork</option>
+                <option>Geometric</option>
+                <option>Ornamental</option>
+                <option>Custom / Mixed</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell me about your idea</label>
+              <textarea id="message" name="message" placeholder="Describe your concept, size, placement..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-social">
-    <a href="https://www.instagram.com/tattoosbypaketh/" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://www.instagram.com/mindtripstudio/" target="_blank" rel="noopener">Studio</a>
-    <a href="mailto:Tattoosbypaketh@gmail.com">Email</a>
-  </div>
-  <p class="footer-credit">Site by <a href="https://bayouwebstudio.com" target="_blank" rel="noopener">Bayou Web Studio</a></p>
-</footer>
+  <footer>
+    <span class="footer-logo">Israel Paketh</span>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#booking">Book</a></li>
+      <li><a href="https://www.instagram.com/tattoosbypaketh/" target="_blank" rel="noopener">Instagram</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 Israel Paketh. All rights reserved.</p>
+    <p class="bws-credit">Built by <a href="https://bayouwebstudio.com" target="_blank" rel="noopener">Bayou Web Studio</a></p>
+  </footer>
 
-<script>
-// Scroll reveal
-const reveals = document.querySelectorAll('.reveal');
-const galleryItems = document.querySelectorAll('.gallery-item');
+  <a href="#booking" class="float-book">Book Now</a>
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
-}, { threshold: 0.1 });
-
-reveals.forEach(el => observer.observe(el));
-galleryItems.forEach((el, i) => {
-  el.style.transitionDelay = `${i * 80}ms`;
-  observer.observe(el);
-});
-
-// FAB show on scroll
-const fab = document.getElementById('fabBook');
-window.addEventListener('scroll', () => {
-  fab.classList.toggle('visible', window.scrollY > 400);
-}, { passive: true });
-
-// Lightbox
-const lightbox = document.getElementById('lightbox');
-const lbImg = lightbox.querySelector('img');
-const images = Array.from(document.querySelectorAll('.gallery-item img'));
-let currentIdx = 0;
-
-function openLightbox(idx) {
-  currentIdx = idx;
-  lbImg.src = images[idx].src;
-  lightbox.classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-
-function closeLightbox() {
-  lightbox.classList.remove('active');
-  document.body.style.overflow = '';
-}
-
-function navLightbox(dir) {
-  currentIdx = (currentIdx + dir + images.length) % images.length;
-  lbImg.src = images[currentIdx].src;
-}
-
-galleryItems.forEach((item, i) => item.addEventListener('click', () => openLightbox(i)));
-lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
-lightbox.querySelector('.lightbox-prev').addEventListener('click', (e) => { e.stopPropagation(); navLightbox(-1); });
-lightbox.querySelector('.lightbox-next').addEventListener('click', (e) => { e.stopPropagation(); navLightbox(1); });
-lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
-document.addEventListener('keydown', (e) => {
-  if (!lightbox.classList.contains('active')) return;
-  if (e.key === 'Escape') closeLightbox();
-  if (e.key === 'ArrowLeft') navLightbox(-1);
-  if (e.key === 'ArrowRight') navLightbox(1);
-});
-</script>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
