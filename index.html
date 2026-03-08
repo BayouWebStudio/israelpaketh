@@ -1,352 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Israel Paketh | Blackwork & Ornamental Tattoo Artist</title>
-  <meta name="description" content="Israel Paketh — Blackwork, geometric, and ornamental tattoo artist. Booking 2026. Contact: tattoosbypaketh@gmail.com" />
-  <meta name="keywords" content="Israel Paketh, tattoosbypaketh, blackwork tattoo, ornamental tattoo, geometric tattoo, tattoo artist" />
-
-  <meta property="og:title" content="Israel Paketh | Blackwork & Ornamental Tattoo" />
-  <meta property="og:description" content="Blackwork, geometric, and ornamental tattoo artist. Booking 2026." />
-  <meta property="og:image" content="https://tattoosbypaketh.com/img/tattoo_01.jpg" />
-  <meta property="og:url" content="https://tattoosbypaketh.com/" />
-  <meta property="og:type" content="website" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Israel Paketh | Blackwork & Ornamental Tattoo" />
-  <meta name="twitter:image" content="https://tattoosbypaketh.com/img/tattoo_01.jpg" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Israel Paketh — Tattoo Artist",
-    "description": "Blackwork, geometric, and ornamental tattoo artist.",
-    "url": "https://tattoosbypaketh.com/",
-    "image": "https://tattoosbypaketh.com/img/tattoo_01.jpg",
-    "email": "tattoosbypaketh@gmail.com",
-    "sameAs": ["https://www.instagram.com/tattoosbypaketh/"]
-  }
-  </script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --gold: #C9A07A;
-      --black: #0a0a0a;
-      --dark: #111111;
-      --darker: #0d0d0d;
-      --text: #e8e8e8;
-      --muted: #888;
-    }
-    html { scroll-behavior: smooth; }
-    body { background: var(--black); color: var(--text); font-family: 'Inter', sans-serif; font-weight: 300; line-height: 1.6; overflow-x: hidden; }
-
-    /* NAV */
-    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 2.5rem; background: rgba(10,10,10,0.88); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(201,160,122,0.12); }
-    .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--gold); letter-spacing: 0.05em; text-decoration: none; }
-    .nav-links { display: flex; gap: 2rem; list-style: none; }
-    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.3s; }
-    .nav-links a:hover { color: var(--gold); }
-
-    /* HERO */
-    #hero { position: relative; height: 100vh; min-height: 600px; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
-    .hero-bg { position: absolute; inset: 0; background-image: url('img/tattoo_01.jpg'); background-size: cover; background-position: center; filter: brightness(0.28); transform: scale(1.05); transition: transform 8s ease; }
-    #hero:hover .hero-bg { transform: scale(1.0); }
-    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,10,10,0.2) 0%, rgba(10,10,10,0.75) 100%); }
-    .hero-content { position: relative; z-index: 2; max-width: 800px; padding: 0 1.5rem; }
-    .hero-eyebrow { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.32em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
-    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(3rem, 8vw, 6.5rem); font-weight: 900; line-height: 1.0; color: #fff; margin-bottom: 1.2rem; }
-    .hero-subtitle { font-size: clamp(0.9rem, 2vw, 1.1rem); color: rgba(255,255,255,0.6); font-weight: 300; letter-spacing: 0.06em; margin-bottom: 2.5rem; }
-    .hero-cta { display: inline-block; padding: 0.9rem 2.8rem; background: var(--gold); color: var(--black); text-decoration: none; font-weight: 600; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; border: 2px solid var(--gold); transition: all 0.3s; }
-    .hero-cta:hover { background: transparent; color: var(--gold); }
-    .hero-scroll { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.35); font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; animation: bounce 2.2s infinite; }
-    .scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, var(--gold), transparent); }
-    @keyframes bounce { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(7px); } }
-
-    /* SECTIONS */
-    section { padding: 7rem 1.5rem; }
-    .container { max-width: 1100px; margin: 0 auto; }
-    .section-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.8rem; }
-    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; line-height: 1.15; margin-bottom: 1.5rem; }
-    .divider { width: 48px; height: 1px; background: var(--gold); margin: 1.5rem 0 2rem; }
-
-    /* ABOUT */
-    #about { background: var(--dark); }
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-    .about-img-wrap { position: relative; }
-    .about-img-wrap::before { content: ''; position: absolute; top: 18px; left: 18px; right: -18px; bottom: -18px; border: 1px solid rgba(201,160,122,0.3); pointer-events: none; }
-    .about-img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; filter: grayscale(15%); }
-    .about-text p { color: rgba(232,232,232,0.72); font-size: 1rem; line-height: 1.85; margin-bottom: 1.4rem; }
-    .about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2.5rem; padding-top: 2.5rem; border-top: 1px solid rgba(201,160,122,0.15); }
-    .stat-number { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 700; color: var(--gold); display: block; }
-    .stat-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); }
-
-    /* GALLERY */
-    #gallery { background: var(--black); }
-    .gallery-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
-    .gallery-item { position: relative; overflow: hidden; cursor: pointer; }
-    .gallery-item img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; transition: transform 0.6s ease, filter 0.4s ease; filter: grayscale(10%); }
-    .gallery-item:hover img { transform: scale(1.06); filter: grayscale(0%); }
-    .gallery-item-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,10,10,0.75) 0%, transparent 50%); opacity: 0; transition: opacity 0.4s; display: flex; align-items: flex-end; padding: 1.2rem; }
-    .gallery-item:hover .gallery-item-overlay { opacity: 1; }
-    .gallery-item-overlay span { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); }
-
-    /* STYLES */
-    #styles { background: var(--darker); }
-    .styles-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
-    .style-card { border: 1px solid rgba(201,160,122,0.18); padding: 2rem 1.5rem; transition: border-color 0.3s, background 0.3s; }
-    .style-card:hover { border-color: var(--gold); background: rgba(201,160,122,0.04); }
-    .style-icon { font-size: 1.8rem; margin-bottom: 1rem; }
-    .style-card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; margin-bottom: 0.7rem; }
-    .style-card p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
-
-    /* BOOKING */
-    #booking { background: var(--dark); }
-    .booking-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
-    .booking-info p { color: rgba(232,232,232,0.7); font-size: 0.95rem; line-height: 1.9; margin-bottom: 1.2rem; }
-    .booking-contact-list { list-style: none; margin-top: 2rem; }
-    .booking-contact-list li { padding: 1rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); display: flex; align-items: center; gap: 1rem; }
-    .booking-contact-list li:first-child { border-top: 1px solid rgba(255,255,255,0.06); }
-    .contact-icon { width: 38px; height: 38px; border-radius: 50%; background: rgba(201,160,122,0.1); border: 1px solid rgba(201,160,122,0.25); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
-    .contact-detail { display: flex; flex-direction: column; }
-    .contact-label { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
-    .contact-value { font-size: 0.92rem; color: var(--text); }
-    .contact-value a { color: var(--gold); text-decoration: none; }
-    .contact-value a:hover { text-decoration: underline; }
-    .booking-form-box { background: rgba(255,255,255,0.02); border: 1px solid rgba(201,160,122,0.15); padding: 2.5rem; }
-    .booking-form-box h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 0.5rem; }
-    .booking-form-box > p { font-size: 0.88rem; color: var(--muted); margin-bottom: 2rem; }
-    .form-group { margin-bottom: 1.2rem; }
-    .form-group label { display: block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.5rem; }
-    .form-group input, .form-group textarea, .form-group select { width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); color: var(--text); padding: 0.75rem 1rem; font-family: 'Inter', sans-serif; font-size: 0.9rem; outline: none; transition: border-color 0.3s; -webkit-appearance: none; }
-    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--gold); }
-    .form-group textarea { resize: vertical; min-height: 110px; }
-    .form-submit { width: 100%; background: var(--gold); color: var(--black); border: 2px solid var(--gold); padding: 0.9rem 2rem; font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer; transition: all 0.3s; }
-    .form-submit:hover { background: transparent; color: var(--gold); }
-
-    /* FLOAT BOOK */
-    .float-book { position: fixed; bottom: 2rem; right: 2rem; z-index: 200; background: var(--gold); color: var(--black); padding: 0.85rem 1.8rem; text-decoration: none; font-weight: 700; font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; box-shadow: 0 8px 32px rgba(201,160,122,0.35); transition: all 0.3s; border: 2px solid var(--gold); }
-    .float-book:hover { background: transparent; color: var(--gold); box-shadow: 0 8px 32px rgba(201,160,122,0.2); }
-
-    /* FOOTER */
-    footer { background: var(--darker); border-top: 1px solid rgba(255,255,255,0.05); padding: 3rem 1.5rem; text-align: center; }
-    .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--gold); margin-bottom: 1rem; display: block; }
-    .footer-links { display: flex; justify-content: center; gap: 2rem; margin: 1.5rem 0; list-style: none; }
-    .footer-links a { color: var(--muted); text-decoration: none; font-size: 0.8rem; transition: color 0.3s; }
-    .footer-links a:hover { color: var(--gold); }
-    .footer-copy { font-size: 0.75rem; color: rgba(136,136,136,0.5); margin-top: 1.5rem; }
-    .bws-credit { font-size: 0.7rem; color: rgba(136,136,136,0.5); margin-top: 0.6rem; }
-    .bws-credit a { color: rgba(201,160,122,0.5); text-decoration: none; transition: color 0.3s; }
-    .bws-credit a:hover { color: var(--gold); }
-
-    /* FADE IN */
-    .fade-in { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
-    .fade-in.visible { opacity: 1; transform: none; }
-
-    /* RESPONSIVE */
-    @media (max-width: 900px) {
-      nav { padding: 1rem 1.5rem; }
-      .about-grid { grid-template-columns: 1fr; gap: 3rem; }
-      .booking-grid { grid-template-columns: 1fr; gap: 3rem; }
-      .styles-grid { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 600px) {
-      .nav-links { display: none; }
-      .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
-      .styles-grid { grid-template-columns: 1fr; }
-      .float-book { bottom: 1.2rem; right: 1.2rem; padding: 0.75rem 1.4rem; }
-    }
-  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17990052802"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-17990052802');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Israel Paketh | Tattoo Artist / Tatuador is a professional tattoo artist in la specializing in custom tattoo designs. Book your appointment today.">
+<meta property="og:title" content="Israel Paketh | Tattoo Artist">
+<meta property="og:description" content="Professional tattoo artist. Book your session today.">
+<meta property="og:image" content="">
+<title>Israel Paketh | Tattoo Artist / Tatuador — Tattoo Artist in la</title>
+<link rel="canonical" href="https://bayouwebstudio.com/israelpaketh/">
+<script type="application/ld+json">{
+  "@context":"https://schema.org","@type":"LocalBusiness",
+  "name":"Israel Paketh","image":"",
+  "url":"https://bayouwebstudio.com/israelpaketh/",
+  "sameAs":["https://www.instagram.com/israelpaketh/"]
+}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0a0a;color:#fff}
+nav{position:fixed;top:0;width:100%;background:rgba(10,10,10,.95);padding:16px 24px;z-index:100;display:flex;justify-content:space-between;align-items:center}
+nav .logo{color:#C9A07A;font-weight:bold;font-size:18px;letter-spacing:1px}
+nav a{color:#fff;text-decoration:none;font-size:14px;margin-left:24px;opacity:.8}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)),url('') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 24px}
+.hero h1{font-size:clamp(36px,6vw,72px);font-weight:900;letter-spacing:-1px;line-height:1.1;margin-bottom:16px}
+.hero h1 span{color:#C9A07A}
+.hero p{font-size:18px;opacity:.8;margin-bottom:32px}
+.btn{background:#C9A07A;color:#0a0a0a;padding:16px 40px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:16px;display:inline-block;transition:.2s}
+.btn:hover{opacity:.85;transform:translateY(-2px)}
+section{padding:80px 24px;max-width:1100px;margin:0 auto}
+.section-title{font-size:32px;font-weight:900;color:#C9A07A;margin-bottom:48px;text-align:center;letter-spacing:-0.5px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-img{width:100%;border-radius:16px;aspect-ratio:1;object-fit:cover;border:3px solid #C9A07A}
+.about-text h2{font-size:28px;margin-bottom:16px}
+.about-text p{color:#aaa;line-height:1.8;font-size:15px}
+.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:900px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}@media(min-width:1200px){.gallery-grid{grid-template-columns:repeat(4,1fr)
+.gallery-item img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;transition:.3s}
+.gallery-item img:hover{transform:scale(1.03);opacity:.9}
+.cta-section{text-align:center;padding:80px 24px;background:linear-gradient(135deg,#111,#1a1a2e)}
+.cta-section h2{font-size:36px;margin-bottom:16px}
+.cta-section p{color:#aaa;font-size:17px;margin-bottom:32px}
+.float-btn{position:fixed;bottom:24px;right:24px;background:#C9A07A;color:#0a0a0a;padding:14px 24px;border-radius:50px;text-decoration:none;font-weight:bold;font-size:15px;box-shadow:0 4px 24px rgba(0,0,0,.4);z-index:999;transition:.2s}
+.float-btn:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(0,0,0,.5)}
+footer{padding:32px 24px;text-align:center;border-top:1px solid #222;color:#555;font-size:13px}
+@media(max-width:700px){.about-grid{grid-template-columns:1fr}nav a{display:none}}
+</style>
 </head>
 <body>
+<nav>
+  <div class="logo">@israelpaketh</div>
+  <div>
+    <a data-en="Gallery" data-es="Galería" href="#gallery">Gallery</a>
+    <a data-en="About" data-es="Acerca de" href="#about">About</a>
+    <a data-en="Contact" data-es="Contacto" href="#contact">Contact</a>
+  </div>
+ <a data-en="Services / Servicios" data-es="Servicios / Servicios" href="#services">Services / Servicios</a>
+    </nav>
+    <button id="lang-toggle" onclick="toggleLang()" title="Switch language" style="position:fixed;bottom:80px;right:16px;z-index:9999;background:rgba(0,0,0,0.7);border:1px solid rgba(255,255,255,0.2);color:white;padding:8px 12px;border-radius:20px;font-size:13px;font-weight:600;cursor:pointer;backdrop-filter:blur(8px);transition:all 0.2s;">🇺🇸 EN</button>
 
-  <nav>
-    <a href="#hero" class="nav-logo">Israel Paketh</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#styles">Styles</a></li>
-      <li><a href="#booking">Book</a></li>
-    </ul>
-  </nav>
+<div class="hero">
+  <div>
+    <h1 data-en="Israel Paketh | Tattoo Artist / Tatuador" data-es="Israel Paketh | Artista del Tatuaje / Tatuador">Israel Paketh | Tattoo Artist / Tatuador</h1>
+    <p data-en="Custom work. Real craft. Book your session today." data-es="Trabajo personalizado. Artesanía auténtica. Reserva tu sesión hoy mismo.">Custom work. Real craft. Book your session today.</p>
+    <a data-en="Book Now" data-es="Reserva Ahora" href="#gallery" class="btn">Book Now</a>
+  </div>
+</div>
 
-  <section id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">Blackwork &amp; Ornamental Tattoo</p>
-      <h1 class="hero-title">Israel<br>Paketh</h1>
-      <p class="hero-subtitle">Precision linework. Dark geometry. Permanent art.</p>
-      <a href="#booking" class="hero-cta">Book a Session</a>
+<section id="about">
+  <h2 data-en="About" data-es="Acerca de" class="section-title">About</h2>
+  <div class="about-grid">
+    
+    <div class="about-text">
+              <p>Custom work. Real craft. Based in Buenos Aires, Argentina. Book your session today.</p>
+              <p>Follow on Instagram for the latest work.</p>
+              <p>tattoosbypaketh@gmail.com</p>
+            
     </div>
-    <div class="hero-scroll">
-      <div class="scroll-line"></div>
-      <span>Scroll</span>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <section id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-img-wrap fade-in">
-          <img src="img/tattoo_05.jpg" alt="Israel Paketh — Blackwork Tattoo Artist" class="about-img" loading="lazy" />
-        </div>
-        <div class="about-text fade-in">
-          <p class="section-label">About the Artist</p>
-          <h2 class="section-title">Precision.<br>Darkness. Flow.</h2>
-          <div class="divider"></div>
-          <p>Israel Paketh is a blackwork and ornamental tattoo artist known for bold geometric compositions, intricate linework, and deeply intentional designs. Every piece begins as a conversation — a collaboration that results in something truly one of a kind.</p>
-          <p>Specializing in blackwork, geometric, and ornamental styles, Israel creates tattoos that stand the test of time — both in technique and in meaning.</p>
-          <div class="about-stats">
-            <div>
-              <span class="stat-number">596+</span>
-              <span class="stat-label">Posts</span>
-            </div>
-            <div>
-              <span class="stat-number">102K</span>
-              <span class="stat-label">Followers</span>
-            </div>
-            <div>
-              <span class="stat-number">2026</span>
-              <span class="stat-label">Booking Open</span>
-            </div>
+<section id="gallery">
+  <h2 data-en="Portfolio" data-es="Portafolio" class="section-title">Portfolio</h2>
+  <div class="gallery-grid">
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.0s;transition-delay:0.0s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/741D91D2-A5B2-4997-AC3F-8184325C5EAC.jpeg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.05s;transition-delay:0.05s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/DSC09175.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.1s;transition-delay:0.1s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_4221.png" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.15s;transition-delay:0.15s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_4390.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.2s;transition-delay:0.2s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_4667.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.25s;transition-delay:0.25s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_4819.jpeg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.3s;transition-delay:0.3s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_5896.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.35s;transition-delay:0.35s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_5980.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.4s;transition-delay:0.4s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_7221.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.45s;transition-delay:0.45s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_7223.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.5s;transition-delay:0.5s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_7249.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.55s;transition-delay:0.55s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_7602.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.6s;transition-delay:0.6s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_7607.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.65s;transition-delay:0.65s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_8733.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.7s;transition-delay:0.7s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/jewelry_01.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.75s;transition-delay:0.75s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/jewelry_02.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.8s;transition-delay:0.8s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/photo_01.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.85s;transition-delay:0.85s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/photo_02.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.9s;transition-delay:0.9s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/photo_03.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:0.95s;transition-delay:0.95s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/photo_04.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.0s;transition-delay:1.0s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/photo_05.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.05s;transition-delay:1.05s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/photo_06.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.1s;transition-delay:1.1s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/photo_07.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.15s;transition-delay:1.15s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/photo_08.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.2s;transition-delay:1.2s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/photo_09.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.25s;transition-delay:1.25s"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/photo_10.jpg" alt="israelpaketh work" loading="lazy" decoding="async" onclick="openLightbox(this.src)" /><div class="gallery-item-overlay"><span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span></div></div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.30s;transition-delay:1.30s">
+          <img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_8733.jpg" alt="Israel Paketh | Tattoo Artist / Tatuador work 81" loading="lazy" decoding="async" onclick="openLightbox(this.src)" />
+          <div class="gallery-item-overlay">
+            <span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span>
           </div>
         </div>
-      </div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.35s;transition-delay:1.35s">
+          <img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/741D91D2-A5B2-4997-AC3F-8184325C5EAC.jpeg" alt="Israel Paketh | Tattoo Artist / Tatuador work 84" loading="lazy" decoding="async" onclick="openLightbox(this.src)" />
+          <div class="gallery-item-overlay">
+            <span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.40s;transition-delay:1.40s">
+          <img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_5896.jpg" alt="Israel Paketh | Tattoo Artist / Tatuador work 87" loading="lazy" decoding="async" onclick="openLightbox(this.src)" />
+          <div class="gallery-item-overlay">
+            <span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.45s;transition-delay:1.45s">
+          <img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/DSC09175.jpg" alt="Israel Paketh | Tattoo Artist / Tatuador work 90" loading="lazy" decoding="async" onclick="openLightbox(this.src)" />
+          <div class="gallery-item-overlay">
+            <span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.50s;transition-delay:1.50s">
+          <img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_7607.jpg" alt="Israel Paketh | Tattoo Artist / Tatuador work 93" loading="lazy" decoding="async" onclick="openLightbox(this.src)" />
+          <div class="gallery-item-overlay">
+            <span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.55s;transition-delay:1.55s">
+          <img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_7249.jpg" alt="Israel Paketh | Tattoo Artist / Tatuador work 96" loading="lazy" decoding="async" onclick="openLightbox(this.src)" />
+          <div class="gallery-item-overlay">
+            <span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.60s;transition-delay:1.60s">
+          <img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_5980.jpg" alt="Israel Paketh | Tattoo Artist / Tatuador work 99" loading="lazy" decoding="async" onclick="openLightbox(this.src)" />
+          <div class="gallery-item-overlay">
+            <span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.65s;transition-delay:1.65s">
+          <img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_4984.jpg" alt="Israel Paketh | Tattoo Artist / Tatuador work 102" loading="lazy" decoding="async" onclick="openLightbox(this.src)" />
+          <div class="gallery-item-overlay">
+            <span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.70s;transition-delay:1.70s">
+          <img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_4819.jpg" alt="Israel Paketh | Tattoo Artist / Tatuador work 105" loading="lazy" decoding="async" onclick="openLightbox(this.src)" />
+          <div class="gallery-item-overlay">
+            <span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.75s;transition-delay:1.75s">
+          <img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_4390.jpg" alt="Israel Paketh | Tattoo Artist / Tatuador work 108" loading="lazy" decoding="async" onclick="openLightbox(this.src)" />
+          <div class="gallery-item-overlay">
+            <span data-en="Gallery" data-es="Galería" class="gallery-item-label">Gallery</span>
+          </div>
+        </div>
+        <div class="gallery-item fade-in" style="-webkit-transition-delay:1.80s;transition-delay:1.80s">
+          <img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_4390.jpg" alt="Israel Paketh | Tattoo Artist / Tatuador work 111" loading="lazy" decoding="async" onclick="openLightbox(this.src)" />
+          <div class="gallery-item-overlay">
+            <span class="gallery-item-label">Gallery</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-img="img/IMG_8733.jpg"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_8733.jpg" alt="Gallery photo" loading="lazy" onclick="openLightbox(this.src)" /></div>
+<!-- GALLERY_IMAGES -->
+
+  </div>
+</section>
+
+<div class="cta-section" id="contact">
+  <h2 data-en="Book Now Today" data-es="Reserva Hoy Mismo">Book Now Today</h2>
+  <p data-en="Ready to work together? Get in touch to book your session." data-es="¿Listo para trabajar juntos? Ponte en contacto para reservar tu sesión.">Ready to work together? Get in touch to book your session.</p>
+  <a data-en="DM on Instagram" data-es="MD en Instagram" href="https://www.instagram.com/israelpaketh/" class="btn">DM on Instagram</a>
+</div>
+
+<a data-en="Book Now" data-es="Reserva Ahora" href="mailto:tattoosbypaketh@gmail.com" class="float-btn">Book Now</a>
+
+
+  <!-- Services / Servicios Section -->
+  <section id="services" style="padding:80px 20px;max-width:700px;margin:0 auto;">
+    <h2 data-en="Services / Servicios" data-es="Servicios / Servicios" style="font-size:28px;font-weight:700;text-align:center;margin-bottom:40px;">Services / Servicios</h2>
+    <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.08);">
+          <span data-en="Small Scale Projects / Proyectos Pequeños" data-es="Proyectos a Pequeña Escala / Proyectos Pequeños" style="font-size:16px;">Small Scale Projects / Proyectos Pequeños</span>
+          
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.08);">
+          <span data-en="Medium Scale Projects / Proyectos Medianos" data-es="Proyectos a Mediana Escala / Proyectos Medianos" style="font-size:16px;">Medium Scale Projects / Proyectos Medianos</span>
+          
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.08);">
+          <span data-en="Large Scale Projects / Proyectos Grandes" data-es="Proyectos a Gran Escala / Proyectos Grandes" style="font-size:16px;">Large Scale Projects / Proyectos Grandes</span>
+          
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.08);">
+          <span data-en="Cover Ups / Coberturas" data-es="Tatuajes de Cobertura / Coberturas" style="font-size:16px;">Cover Ups / Coberturas</span>
+          
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.08);">
+          <span data-en="Blastovers / Blastovers" data-es="Blastovers / Blastovers" style="font-size:16px;">Blastovers / Blastovers</span>
+          
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.08);">
+          <span data-en="Black on Black Tattoos / Tatuajes Negro sobre Negro" data-es="Tatuajes Negro sobre Negro / Tatuajes Negro sobre Negro" style="font-size:16px;">Black on Black Tattoos / Tatuajes Negro sobre Negro</span>
+          
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.08);">
+          <span data-en="White on Black Tattoos / Tatuajes Blanco sobre Negro" data-es="Tatuajes Blanco sobre Negro / Tatuajes Blanco sobre Negro" style="font-size:16px;">White on Black Tattoos / Tatuajes Blanco sobre Negro</span>
+          
+        </div>
     </div>
+        <div class="gallery-item" data-img="img/741D91D2-A5B2-4997-AC3F-8184325C5EAC.jpg"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/741D91D2-A5B2-4997-AC3F-8184325C5EAC.jpg" alt="Gallery photo" loading="lazy" onclick="openLightbox(this.src)" /></div>
   </section>
 
-  <section id="gallery">
-    <div class="container">
-      <p class="section-label fade-in">Portfolio</p>
-      <h2 class="section-title fade-in">Recent Work</h2>
-      <div class="divider fade-in"></div>
-      <div class="gallery-grid">
-        <div class="gallery-item fade-in"><img src="img/tattoo_01.jpg" alt="Blackwork tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Blackwork</span></div></div>
-        <div class="gallery-item fade-in"><img src="img/tattoo_02.jpg" alt="Ornamental tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Ornamental</span></div></div>
-        <div class="gallery-item fade-in"><img src="img/tattoo_03.jpg" alt="Geometric tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Geometric</span></div></div>
-        <div class="gallery-item fade-in"><img src="img/tattoo_04.jpg" alt="Blackwork tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Blackwork</span></div></div>
-        <div class="gallery-item fade-in"><img src="img/tattoo_06.jpg" alt="Ornamental tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Ornamental</span></div></div>
-        <div class="gallery-item fade-in"><img src="img/tattoo_07.jpg" alt="Geometric tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Geometric</span></div></div>
-        <div class="gallery-item fade-in"><img src="img/tattoo_08.jpg" alt="Blackwork tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Blackwork</span></div></div>
-        <div class="gallery-item fade-in"><img src="img/tattoo_09.jpg" alt="Ornamental tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Ornamental</span></div></div>
-        <div class="gallery-item fade-in"><img src="img/tattoo_10.jpg" alt="Geometric tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Geometric</span></div></div>
-        <div class="gallery-item fade-in"><img src="img/tattoo_11.jpg" alt="Blackwork tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Blackwork</span></div></div>
-        <div class="gallery-item fade-in"><img src="img/tattoo_12.jpg" alt="Ornamental tattoo by Israel Paketh" loading="lazy" /><div class="gallery-item-overlay"><span>Ornamental</span></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="styles">
-    <div class="container">
-      <p class="section-label fade-in">Specialties</p>
-      <h2 class="section-title fade-in">What I Create</h2>
-      <div class="divider fade-in"></div>
-      <div class="styles-grid">
-        <div class="style-card fade-in">
-          <div class="style-icon">◆</div>
-          <h3>Blackwork</h3>
-          <p>Bold, high-contrast designs in pure black ink. Striking visuals built to last a lifetime.</p>
-        </div>
-        <div class="style-card fade-in">
-          <div class="style-icon">✦</div>
-          <h3>Geometric</h3>
-          <p>Sacred geometry, mandalas, and structured patterns crafted with mathematical precision.</p>
-        </div>
-        <div class="style-card fade-in">
-          <div class="style-icon">❧</div>
-          <h3>Ornamental</h3>
-          <p>Decorative elements, floral motifs, and intricate detailing that flow with the body.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="booking">
-    <div class="container">
-      <p class="section-label fade-in">Get in Touch</p>
-      <h2 class="section-title fade-in">Book a Session</h2>
-      <div class="divider fade-in"></div>
-      <div class="booking-grid">
-        <div class="booking-info fade-in">
-          <p>Ready to start your tattoo journey? I take on a limited number of bookings to ensure every client receives my full attention and best work.</p>
-          <p>Send me an email with your idea, reference images, and preferred placement. I'll get back to you within a few days.</p>
-          <ul class="booking-contact-list">
-            <li>
-              <div class="contact-icon">✉</div>
-              <div class="contact-detail">
-                <span class="contact-label">Email</span>
-                <span class="contact-value"><a href="mailto:tattoosbypaketh@gmail.com">tattoosbypaketh@gmail.com</a></span>
-              </div>
-            </li>
-            <li>
-              <div class="contact-icon">📷</div>
-              <div class="contact-detail">
-                <span class="contact-label">Instagram</span>
-                <span class="contact-value"><a href="https://www.instagram.com/tattoosbypaketh/" target="_blank" rel="noopener">@tattoosbypaketh</a></span>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="booking-form-box fade-in">
-          <h3>Start Your Inquiry</h3>
-          <p>Fill out the form and I'll reply via email.</p>
-          <form action="mailto:tattoosbypaketh@gmail.com" method="POST" enctype="text/plain">
-            <div class="form-group">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="Full name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="your@email.com" required />
-            </div>
-            <div class="form-group">
-              <label for="style">Tattoo Style</label>
-              <select id="style" name="style">
-                <option value="">Select a style...</option>
-                <option>Blackwork</option>
-                <option>Geometric</option>
-                <option>Ornamental</option>
-                <option>Custom / Mixed</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Tell me about your idea</label>
-              <textarea id="message" name="message" placeholder="Describe your concept, size, placement..."></textarea>
-            </div>
-            <button type="submit" class="form-submit">Send Inquiry</button>
-          </form>
-        </div>
-      </div>
+  
+  <!-- Location Section -->
+  <section id="location" style="padding:80px 20px;max-width:700px;margin:0 auto;">
+    <h2 style="font-size:28px;font-weight:700;text-align:center;margin-bottom:40px;">Location</h2>
+    <div style="text-align:center;line-height:1.8;color:rgba(255,255,255,0.8);">
+      <p>📍 Buenos Aires, Argentina</p>
     </div>
   </section>
 
   <footer>
-    <span class="footer-logo">Israel Paketh</span>
-    <ul class="footer-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#booking">Book</a></li>
-      <li><a href="https://www.instagram.com/tattoosbypaketh/" target="_blank" rel="noopener">Instagram</a></li>
-    </ul>
-    <p class="footer-copy">&copy; 2026 Israel Paketh. All rights reserved.</p>
-    <p class="bws-credit">Built by <a href="https://bayouwebstudio.com" target="_blank" rel="noopener">Bayou Web Studio</a></p>
+  <p style="margin-bottom:8px">@israelpaketh ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ· <a data-en="Israel Paketh" data-es="Israel Paketh" href="https://instagram.com/israelpaketh" style="color:#C9A07A">Israel Paketh</a></p>
+  <a data-en="Powered by BWS" data-es="Desarrollado por BWS" href="https://bayouwebstudio.com" target="_blank" style="color:inherit;text-decoration:none;opacity:0.5;font-size:12px;">Powered by BWS</a>
+    <p style="margin-top:8px;"><a href="/privacy.html" style="color:rgba(255,255,255,0.4);font-size:12px;text-decoration:none;margin-left:16px;">Privacy Policy</a></p>
   </footer>
-
-  <a href="#booking" class="float-book">Book Now</a>
-
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
-  <script src="https://bayouwebstudio.com/mint-widget.js"></script>
+<!-- Claim Banner ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ shown on unclaimed free sites -->
+<div id="claim-banner" style="position:fixed;bottom:0;left:0;right:0;z-index:9999;background:rgba(10,26,18,0.92);backdrop-filter:blur(8px);border-top:1px solid rgba(0,200,130,0.2);padding:8px 16px;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;box-shadow:0 -2px 12px rgba(0,0,0,0.3);font-family:-apple-system,sans-serif;transform:translateY(100%);transition:transform 0.4s ease;"><script>setTimeout(function(){var b=document.getElementById("claim-banner");if(b)b.style.transform="translateY(0)"},10000);</script>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <span data-en="ÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¿" data-es="¿" style="font-size:1.3rem;">ÃÂÃÂÃÂÃÂ°ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ¿</span>
+    <div>
+      <p data-en="This is YOUR free website" data-es="Este es TU sitio web gratuito" style="margin:0;font-size:0.9rem;font-weight:700;color:#fff;">This is YOUR free website</p>
+      <p data-en="Claim it to edit, upgrade, and remove this banner" data-es="Reclámalo para editarlo, mejorarlo y eliminar este banner" style="margin:0;font-size:0.75rem;color:rgba(255,255,255,0.5);">Claim it to edit, upgrade, and remove this banner</p>
+    </div>
+  </div>
+        <div class="gallery-item" data-img="img/IMG_4390.jpg"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_4390.jpg" alt="Gallery photo" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item" data-img="img/IMG_4819.jpg"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_4819.jpg" alt="Gallery photo" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item" data-img="img/IMG_5980.jpg"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_5980.jpg" alt="Gallery photo" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item" data-img="img/DSC09179.jpg"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/DSC09179.jpg" alt="Gallery photo" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item" data-img="img/IMG_5896.jpg"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_5896.jpg" alt="Gallery photo" loading="lazy" onclick="openLightbox(this.src)" /></div>
+        <div class="gallery-item" data-img="img/IMG_7282.jpg"><img src="https://raw.githubusercontent.com/BayouWebStudio/bayouwebstudio.github.io/main/israelpaketh/img/IMG_7282.jpg" alt="Gallery photo" loading="lazy" onclick="openLightbox(this.src)" /></div>
+  <a data-en="Claim My Site ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ" data-es="Reclama Mi Sitio —" href="https://curious-lemming-262.convex.site/api/claim-checkout?slug=israelpaketh" style="background:#1A1A1A;color:#0a1a12;font-weight:700;font-size:0.9rem;padding:10px 20px;border-radius:8px;text-decoration:none;white-space:nowrap;transition:opacity .2s;" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">Claim My Site ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ</a>
+  <button data-en="ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ" data-es="—" onclick="document.getElementById('claim-banner').style.display='none'" style="background:none;border:none;color:rgba(255,255,255,0.3);font-size:1.2rem;cursor:pointer;padding:4px;">ÃÂÃÂÃÂÃÂ¢ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ</button>
+</div>
+  <script>window.__mintSlug="israelpaketh";</script>
+<script src="https://getminted.ai/mint-widget.js"></script>
+<script>
+(function(){
+  var lang = localStorage.getItem("mint-lang") || "en";
+  function applyLang(l){
+    lang = l;
+    localStorage.setItem("mint-lang", l);
+    document.querySelectorAll("[data-en]").forEach(function(el){
+      el.textContent = l === "es" ? el.getAttribute("data-es") : el.getAttribute("data-en");
+    });
+    var btn = document.getElementById("lang-toggle");
+    if(btn) btn.textContent = l === "es" ? "🇺🇸 EN" : "🇲🇽 ES";
+  }
+  window.toggleLang = function(){ applyLang(lang === "en" ? "es" : "en"); };
+  document.addEventListener("DOMContentLoaded", function(){ applyLang(lang); });
+})();
+</script>
 </body>
 </html>
