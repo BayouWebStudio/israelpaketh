@@ -92,8 +92,8 @@
 
     /* ── Dark theme (default) ── */
     :root {
-      --accent: #98E8C1;
-      --accent-rgb: 152,232,193;
+      --accent: #C9A84C;
+      --accent-rgb: 201,168,76;
       --black: #0a0a0a;
       --dark: #111111;
       --darker: #0d0d0d;
@@ -116,14 +116,14 @@
 
     /* ── Light theme ── */
     html.light {
-      --black: #faf9f6;
-      --dark: #f5f3ef;
-      --darker: #eae7e2;
+      --black: #0a0a0a;
+      --dark: #111111;
+      --darker: #0d0d0d;
       --text: #1a1a1a;
       --muted: #666;
       --overlay-from: rgba(250,249,246,0.1);
       --overlay-to: rgba(250,249,246,0.7);
-      --nav-bg: rgba(250,249,246,0.88);
+      --nav-bg: rgba(10,10,10,0.88);
       --nav-border: rgba(0,0,0,0.06);
       --card-bg: rgba(0,0,0,0.02);
       --card-border: rgba(0,0,0,0.08);
@@ -385,6 +385,8 @@
       
       <li><a href="#styles">Styles</a></li>
       <li><a href="#booking">Book</a></li>
+    
+      <li><a href="#services">What I Create</a></li>
     </ul>
     
   </nav>
@@ -395,7 +397,7 @@
     <div class="hero-content">
       <p class="hero-eyebrow">Artist</p>
       <h1 class="hero-title">Israel Paketh</h1>
-      <p class="hero-subtitle">Ornamental Tattoos</p>
+      <p class="hero-subtitle">E2E-1773028392</p>
       <script>
       (function(){
         const phrases = ["Where Israeli artistry meets Pakistani p","Artist","Design Your Dream Tattoo","Book Now"];
@@ -428,8 +430,7 @@
         <div class="about-grid">
           
           <div class="about-content">
-            <div class="about-text">
-              <p>Israelpaketh creates tattoos that capture the fleeting beauty of life. Their art offers a permanent testament to the ephemeral moments that define us.</p>
+            <div class="about-text">Ornamental tattoos, cover ups and blast overs. Based in Buenos Aires, Argentina.</p>
             </div>
             <div class="about-stats">
               <div class="stat-block">
@@ -445,6 +446,64 @@
                 <span class="stat-label">Now Open</span>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking">
+    <div class="container">
+      <p class="section-label fade-in">Get In Touch</p>
+      <h2 class="section-title fade-in">Book a Session</h2>
+      <div class="divider fade-in"></div>
+      <div class="booking-grid fade-in">
+        <div class="booking-info">
+          <p>Ready to get started? Fill out the inquiry form and I'll get back to you to discuss your vision, timeline, and pricing.</p>
+          <p>Follow along on Instagram for the latest work and flash availability.</p>
+          <ul class="booking-contact-list">
+
+
+              <li>
+                <div class="contact-icon" aria-hidden="true">◈</div>
+                <div class="contact-detail">
+                  <span class="contact-label">Instagram</span>
+                  <span class="contact-value"><a href="https://instagram.com/israelpaketh" target="_blank" rel="noopener">@israelpaketh</a></span>
+                </div>
+              </li>
+          </ul>
+        </div>
+        <div class="booking-form-box">
+          <div id="booking-form-wrap">
+            <h3>Start Your Inquiry</h3>
+            <p>Tell me about your idea and I'll be in touch soon.</p>
+            <form id="inquiry-form" action="https://instagram.com/israelpaketh" method="POST" enctype="text/plain">
+              <div class="form-group">
+                <label for="bname">Your Name</label>
+                <input type="text" id="bname" name="Name" placeholder="First & Last" required aria-required="true" />
+              </div>
+              <div class="form-group">
+                <label for="bemail">Email Address</label>
+                <input type="email" id="bemail" name="Email" placeholder="you@example.com" required aria-required="true" />
+              </div>
+              <div class="form-group">
+                <label for="bstyle">Style / Service</label>
+                <select id="bstyle" name="Style" aria-label="Select a service type">
+                  <option>Anime-Inspired</option><option>Illustrative Blackwork</option><option>Pop Culture Mashups</option>
+                  <option>Other / Not Sure</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="bmessage">Your Idea</label>
+                <textarea id="bmessage" name="Message" placeholder="Describe your idea, placement, size, and any reference images you have in mind..." aria-label="Your message"></textarea>
+              </div>
+              <button type="submit" class="form-submit" aria-label="Send inquiry">Send Inquiry</button>
+            </form>
+          </div>
+          <div class="form-success" id="form-success">
+            <div class="form-success-icon">✓</div>
+            <h3>Thank You!</h3>
+            <p>Your inquiry has been received. We'll be in touch within 24 hours. In the meantime, feel free to browse our work on <a href="https://instagram.com/israelpaketh" target="_blank" rel="noopener" style="color:var(--accent)">Instagram</a>.</p>
           </div>
         </div>
       </div>
@@ -484,8 +543,6 @@
         </div>
     </div>
   </section>
-
-  
 
   <section id="styles">
     <div class="container">
@@ -591,8 +648,6 @@
     </div>
   </section>
 
-  
-
   <section id="testimonials">
     <div class="container">
       <p class="section-label fade-in">Reviews</p>
@@ -608,63 +663,23 @@
     </div>
   </section>
 
-  <section id="booking">
-    <div class="container">
-      <p class="section-label fade-in">Get In Touch</p>
-      <h2 class="section-title fade-in">Book a Session</h2>
-      <div class="divider fade-in"></div>
-      <div class="booking-grid fade-in">
-        <div class="booking-info">
-          <p>Ready to get started? Fill out the inquiry form and I'll get back to you to discuss your vision, timeline, and pricing.</p>
-          <p>Follow along on Instagram for the latest work and flash availability.</p>
-          <ul class="booking-contact-list">
+  
 
+  
 
-              <li>
-                <div class="contact-icon" aria-hidden="true">◈</div>
-                <div class="contact-detail">
-                  <span class="contact-label">Instagram</span>
-                  <span class="contact-value"><a href="https://instagram.com/israelpaketh" target="_blank" rel="noopener">@israelpaketh</a></span>
-                </div>
-              </li>
-          </ul>
-        </div>
-        <div class="booking-form-box">
-          <div id="booking-form-wrap">
-            <h3>Start Your Inquiry</h3>
-            <p>Tell me about your idea and I'll be in touch soon.</p>
-            <form id="inquiry-form" action="https://instagram.com/israelpaketh" method="POST" enctype="text/plain">
-              <div class="form-group">
-                <label for="bname">Your Name</label>
-                <input type="text" id="bname" name="Name" placeholder="First & Last" required aria-required="true" />
-              </div>
-              <div class="form-group">
-                <label for="bemail">Email Address</label>
-                <input type="email" id="bemail" name="Email" placeholder="you@example.com" required aria-required="true" />
-              </div>
-              <div class="form-group">
-                <label for="bstyle">Style / Service</label>
-                <select id="bstyle" name="Style" aria-label="Select a service type">
-                  <option>Anime-Inspired</option><option>Illustrative Blackwork</option><option>Pop Culture Mashups</option>
-                  <option>Other / Not Sure</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="bmessage">Your Idea</label>
-                <textarea id="bmessage" name="Message" placeholder="Describe your idea, placement, size, and any reference images you have in mind..." aria-label="Your message"></textarea>
-              </div>
-              <button type="submit" class="form-submit" aria-label="Send inquiry">Send Inquiry</button>
-            </form>
-          </div>
-          <div class="form-success" id="form-success">
-            <div class="form-success-icon">✓</div>
-            <h3>Thank You!</h3>
-            <p>Your inquiry has been received. We'll be in touch within 24 hours. In the meantime, feel free to browse our work on <a href="https://instagram.com/israelpaketh" target="_blank" rel="noopener" style="color:var(--accent)">Instagram</a>.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   <a href="#booking" class="float-book" aria-label="Book now">Book Now</a>
 
@@ -679,6 +694,26 @@
   </div>
 
   <div class="minted-banner"><a href="https://getminted.ai?ref=site" target="_blank" rel="noopener">🌿 Want a free website like this? <span>Get yours at getminted.ai</span></a></div>
+
+  
+  <!-- What I Create Section -->
+  <section id="services" style="padding:80px 20px;max-width:700px;margin:0 auto;">
+    <h2 style="font-size:28px;font-weight:700;text-align:center;margin-bottom:40px;">What I Create</h2>
+    <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.08);">
+          <span style="font-size:16px;">Ornamental tattoos</span>
+          <span style="font-weight:600;color:#C9A84C;">Intricate designs inspired by nature and geometry</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.08);">
+          <span style="font-size:16px;">Cover ups</span>
+          <span style="font-weight:600;color:#C9A84C;">Transform old tattoos into fresh new artwork</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.08);">
+          <span style="font-size:16px;">Blast overs</span>
+          <span style="font-weight:600;color:#C9A84C;">Bold designs that work over existing tattoos</span>
+        </div>
+    </div>
+  </section>
 
   <footer>
     <span class="footer-logo">israelpaketh</span>
