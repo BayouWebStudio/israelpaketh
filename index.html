@@ -315,9 +315,6 @@
     @media (min-width: 769px) { .mobile-cta-bar { display: none !important; } }
 
     /* ── LIGHTBOX ── */
-    .lightbox { visibility: hidden; opacity: 0; pointer-events: none; position: fixed; top:0;right:0;bottom:0;left:0; background: rgba(0,0,0,0.95); z-index: 300; display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center; cursor: pointer; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; }
-    .lightbox.open { visibility: visible; opacity: 1; pointer-events: auto; }
-    .lightbox img { max-width: 90vw; max-height: 90vh; }
 
     /* ── FOOTER ── */
     footer { background: var(--darker); border-top: 1px solid var(--footer-border); padding: 3rem 1.5rem; text-align: center; }
@@ -373,6 +370,17 @@
       .about-stats { gap: 1.5rem; }
       .location-grid { grid-template-columns: 1fr; gap: 2rem; }
     }
+      /* === LIGHTBOX === */
+    .lightbox{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.97);align-items:center;justify-content:center}
+    .lightbox.active{display:flex}
+    .lightbox img{max-width:96vw;max-height:96vh;object-fit:contain;user-select:none;-webkit-user-select:none;pointer-events:none}
+    .lb-close{position:absolute;top:16px;right:16px;width:44px;height:44px;background:rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.3);border-radius:50%;color:#fff;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;-webkit-tap-highlight-color:transparent;transition:border-color 0.3s}
+    .lb-close:hover{border-color:var(--accent,#C9A84C);color:var(--accent,#C9A84C)}
+    .lb-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.2);border-radius:50%;color:#fff;width:48px;height:48px;font-size:24px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;-webkit-tap-highlight-color:transparent;transition:all 0.3s}
+    .lb-nav:hover{border-color:var(--accent,#C9A84C);color:var(--accent,#C9A84C)}
+    .lb-prev{left:12px}
+    .lb-next{right:12px}
+    @media(max-width:600px){.lb-nav{width:40px;height:40px;font-size:20px}.lb-prev{left:8px}.lb-next{right:8px}.lb-close{top:12px;right:12px;width:40px;height:40px}}
   </style>
 <!-- Meta Pixel Code -->
 <script>
@@ -616,11 +624,6 @@ Small/medium/large scale projects are welcome</h2>
     <a data-en="Book Now" data-es="Reserva Ahora" href="#booking" class="mobile-cta-book" aria-label="Book now">Book Now</a>
     
   </div>
-
-  <div class="lightbox" id="lightbox" onclick="this.classList.remove('open')" role="dialog" aria-label="Image viewer">
-    <img id="lightbox-img" src="" alt="Full size view" />
-  </div>
-
   <div class="minted-banner"><a href="https://getminted.ai?ref=site" target="_blank" rel="noopener">🌿 Want a free website like this? <span data-en="Get yours at getminted.ai" data-es="Consigue el tuyo en getminted.ai" data-pt="Obtenha o seu em getminted.ai">Get yours at getminted.ai</span></a></div>
 
   
@@ -711,8 +714,6 @@ Small/medium/large scale projects are welcome</h2>
 
   <script>
     /* Lightbox */
-    function openLightbox(src){document.getElementById('lightbox-img').src=src;document.getElementById('lightbox').classList.add('open');}
-    document.addEventListener('keydown',function(e){if(e.key==='Escape')document.getElementById('lightbox').classList.remove('open');});
 
     /* IG in-app browser detection: skip ALL animations */
     var ua = navigator.userAgent || '';
