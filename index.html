@@ -271,6 +271,35 @@
     .testimonial-stars { color: var(--accent); font-size: 1.1rem; letter-spacing: 0.15em; margin-bottom: 1rem; }
     .testimonial-text { font-size: 0.95rem; color: var(--muted); line-height: 1.8; font-style: italic; margin-bottom: 1rem; }
     .testimonial-author { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+    .testimonial-form-wrap { max-width: 700px; margin: 3rem auto 0; padding-top: 3rem; border-top: 1px solid rgba(152,232,193,0.1); }
+    .testimonial-form-wrap h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 400; margin-bottom: 0.5rem; }
+    .testimonial-form-wrap > p { color: var(--muted); font-size: 0.88rem; margin-bottom: 2rem; }
+    .t-form-group { margin-bottom: 1.2rem; }
+    .t-form-group label { display: block; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.4rem; }
+    .t-form-group input, .t-form-group textarea {
+      width: 100%; background: rgba(255,255,255,0.03); border: 1px solid rgba(152,232,193,0.12); color: var(--white);
+      font-family: 'Inter', sans-serif; font-size: 0.9rem; padding: 12px 14px; outline: none; transition: border-color 0.2s; border-radius: 4px;
+    }
+    .t-form-group input:focus, .t-form-group textarea:focus { border-color: var(--accent); }
+    .t-form-group textarea { resize: vertical; min-height: 100px; }
+    .t-star-rating { display: flex; gap: 6px; margin-top: 4px; }
+    .t-star-rating .tstar { font-size: 1.6rem; cursor: pointer; color: rgba(152,232,193,0.2); transition: color 0.15s, transform 0.15s; user-select: none; }
+    .t-star-rating .tstar:hover, .t-star-rating .tstar.active { color: #FFD700; transform: scale(1.12); }
+    .t-submit-btn {
+      background: var(--accent); color: var(--black); border: none; cursor: pointer;
+      font-family: 'Inter', sans-serif; font-size: 0.72rem; letter-spacing: 0.16em;
+      text-transform: uppercase; padding: 14px 36px; font-weight: 600; border-radius: 4px; transition: opacity 0.2s;
+    }
+    .t-submit-btn:hover { opacity: 0.85; }
+    .t-submit-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .t-success { display: none; background: rgba(152,232,193,0.06); border: 1px solid rgba(152,232,193,0.15); padding: 20px; text-align: center; margin-top: 1.5rem; border-radius: 4px; }
+    .t-success p { color: var(--accent); font-size: 0.95rem; margin-bottom: 4px; }
+    .t-success small { color: var(--muted); font-size: 0.78rem; }
+    .t-loading { display: inline-block; width: 14px; height: 14px; border: 2px solid rgba(152,232,193,0.2); border-top-color: var(--accent); border-radius: 50%; animation: tspin 0.6s linear infinite; vertical-align: middle; margin-right: 6px; }
+    @keyframes tspin { to { transform: rotate(360deg); } }
+    .t-empty { border: 1px solid rgba(152,232,193,0.1); padding: 48px; text-align: center; max-width: 700px; margin: 0 auto; }
+    .t-empty p { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-style: italic; color: var(--muted); margin-bottom: 6px; }
+    .t-empty small { color: var(--muted); font-size: 0.75rem; }
 
     /* ── BOOKING ── */
     #booking { background: var(--dark); }
@@ -699,6 +728,49 @@ Small/medium/large scale projects are welcome</h2>
 
   
 
+  <!-- Testimonials Section -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <p class="section-label reveal" data-en="Client Reviews" data-es="Reseñas de Clientes">Client Reviews</p>
+      <h2 class="section-title reveal" data-en="What Clients Say" data-es="Lo Que Dicen los Clientes">What Clients Say</h2>
+      <div id="testimonials-list" class="testimonials-grid">
+        <div style="text-align:center;padding:32px 0;">
+          <span class="t-loading"></span>
+          <span style="color:var(--muted);font-size:0.85rem;" data-en="Loading reviews..." data-es="Cargando reseñas...">Loading reviews...</span>
+        </div>
+      </div>
+      <div class="testimonial-form-wrap reveal">
+        <h3 data-en="Share Your Experience" data-es="Comparte tu Experiencia">Share Your Experience</h3>
+        <p data-en="Got tattooed by Israel Paketh? We'd love to hear your story." data-es="¿Te tatuó Israel Paketh? Nos encantaría escuchar tu historia.">Got tattooed by Israel Paketh? We'd love to hear your story.</p>
+        <form id="testimonial-form" onsubmit="submitTestimonial(event)">
+          <div class="t-form-group">
+            <label data-en="Your Name" data-es="Tu Nombre">Your Name</label>
+            <input type="text" id="t-name" required placeholder="Your name">
+          </div>
+          <div class="t-form-group">
+            <label data-en="Rating" data-es="Calificación">Rating</label>
+            <div class="t-star-rating" id="star-rating">
+              <span class="tstar" data-value="1" onclick="setRating(1)">★</span>
+              <span class="tstar" data-value="2" onclick="setRating(2)">★</span>
+              <span class="tstar" data-value="3" onclick="setRating(3)">★</span>
+              <span class="tstar" data-value="4" onclick="setRating(4)">★</span>
+              <span class="tstar" data-value="5" onclick="setRating(5)">★</span>
+            </div>
+          </div>
+          <div class="t-form-group">
+            <label data-en="Your Experience" data-es="Tu Experiencia">Your Experience</label>
+            <textarea id="t-body" rows="4" required placeholder="Tell us about your experience..."></textarea>
+          </div>
+          <button type="submit" class="t-submit-btn" id="submit-btn" data-en="Submit Review" data-es="Enviar Reseña">Submit Review</button>
+        </form>
+        <div class="t-success" id="success-msg">
+          <p data-en="✓ Thank you! Your review has been submitted." data-es="✓ ¡Gracias! Tu reseña ha sido enviada.">✓ Thank you! Your review has been submitted.</p>
+          <small data-en="It will appear here once approved." data-es="Aparecerá aquí una vez aprobada.">It will appear here once approved.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <span data-en="israelpaketh" data-es="israelpaketh" class="footer-logo">israelpaketh</span>
     <ul class="footer-links" role="list">
@@ -842,6 +914,82 @@ Small/medium/large scale projects are welcome</h2>
   var tx=0;
   lb.addEventListener('touchstart',function(e){tx=e.changedTouches[0].screenX},{passive:true});
   lb.addEventListener('touchend',function(e){var d=tx-e.changedTouches[0].screenX;if(Math.abs(d)>50)navLB(d>0?1:-1)},{passive:true});
+})();
+</script>
+
+<!-- Testimonials System -->
+<script>
+(function() {
+  var CONVEX_URL = 'https://curious-lemming-262.convex.site';
+  var SITE_SLUG = 'israelpaketh';
+  var selectedRating = 5;
+
+  function escHtml(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+  window.setRating = function(n) {
+    selectedRating = n;
+    var stars = document.querySelectorAll('#star-rating .tstar');
+    for (var i = 0; i < stars.length; i++) {
+      if (parseInt(stars[i].getAttribute('data-value')) <= n) stars[i].classList.add('active');
+      else stars[i].classList.remove('active');
+    }
+  };
+  setRating(5);
+
+  // Load approved testimonials
+  function loadTestimonials() {
+    var container = document.getElementById('testimonials-list');
+    if (!container) return;
+    fetch(CONVEX_URL + '/api/testimonials/approved?slug=' + SITE_SLUG)
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        if (!data.testimonials || data.testimonials.length === 0) {
+          container.innerHTML = '<div class="t-empty"><p>Be the first to share your experience.</p><small>Use the form below ↓</small></div>';
+          return;
+        }
+        container.innerHTML = data.testimonials.map(function(t) {
+          return '<div class="testimonial-card reveal visible">' +
+            '<div class="testimonial-stars">' + '★'.repeat(t.rating) + '☆'.repeat(5 - t.rating) + '</div>' +
+            '<p class="testimonial-text">"' + escHtml(t.reviewText) + '"</p>' +
+            '<span class="testimonial-author">— ' + escHtml(t.name) + '</span></div>';
+        }).join('');
+      })
+      .catch(function() {
+        container.innerHTML = '<div class="t-empty"><p>Be the first to share your experience.</p><small>Use the form below ↓</small></div>';
+      });
+  }
+
+  window.submitTestimonial = function(e) {
+    e.preventDefault();
+    var btn = document.getElementById('submit-btn');
+    btn.disabled = true;
+    btn.innerHTML = '<span class="t-loading"></span> Sending...';
+    var name = document.getElementById('t-name').value.trim();
+    var reviewText = document.getElementById('t-body').value.trim();
+    fetch(CONVEX_URL + '/api/testimonials/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ slug: SITE_SLUG, name: name, rating: selectedRating, reviewText: reviewText })
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if (data.ok) {
+        document.getElementById('testimonial-form').style.display = 'none';
+        document.getElementById('success-msg').style.display = 'block';
+      } else {
+        alert(data.error || 'Error submitting review');
+        btn.disabled = false;
+        btn.textContent = 'Submit Review';
+      }
+    })
+    .catch(function() {
+      alert('Network error — please try again');
+      btn.disabled = false;
+      btn.textContent = 'Submit Review';
+    });
+  };
+
+  loadTestimonials();
 })();
 </script>
 </body>
