@@ -992,5 +992,16 @@ Small/medium/large scale projects are welcome</h2>
   loadTestimonials();
 })();
 </script>
+<script>
+(function(){
+  try {
+    fetch('https://curious-lemming-262.convex.site/api/analytics/pageview', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ slug: 'israelpaketh', page: window.location.pathname })
+    }).catch(function(){});
+  } catch(e) {}
+})();
+</script>
 </body>
 </html>
